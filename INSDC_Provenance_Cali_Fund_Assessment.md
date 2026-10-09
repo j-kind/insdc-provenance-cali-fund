@@ -186,6 +186,47 @@ Among countries with at least 1,000 total records, the fastest post-2023 growth 
 | Solomon Islands       | 1,492     | 740       | 49.6%    | Developing |
 | China                 | 3,563,480 | 1,763,973 | 49.5%    | Developing |
 
+### 3.9 Three-year period growth trajectory
+
+To understand whether the post-2023 shift is a structural trend or a one-off event, we subdivided the ENA data into three consecutive three-year periods and compared output by development status.
+
+**Annualized output (records per year):**
+
+| Status | 2018-2020 | 2021-2023 | 2024+ | Trend |
+|--------|-----------|-----------|-------|-------|
+| Developed | 743,106 | 3,952,469 | 1,381,871 | Peaked then declined |
+| Developing | 293,184 | 797,850 | 999,367 | Steady increase |
+
+*2024+ annualized based on ~2.78 years (Jan 2024 to Oct 2026, partial). 2018-2020 and 2021-2023 are exactly 3 years each.*
+
+**Share of each period by development status:**
+
+| Status | 2018-2020 | 2021-2023 | 2024+ |
+|--------|-----------|-----------|-------|
+| Developed | 69.9% | **82.0%** | 56.3% |
+| Developing | 27.6% | 16.5% | **40.7%** |
+| Unmapped/Territory | 2.5% | 1.5% | 2.9% |
+
+**Growth rate (period records as % of group's total 2018+ records):**
+
+| Status | 2018-2020 | 2021-2023 | 2024+ |
+|--------|-----------|-----------|-------|
+| Developed | 12.4% | 66.1% | 21.4% |
+| Developing | 14.5% | 39.6% | **45.9%** |
+
+**Absolute growth (period vs previous period):**
+
+| Status | 2018-2020 | 2021-2023 | Change | 2024+ | Change |
+|--------|-----------|-----------|--------|-------|--------|
+| Developed | 2,229,317 | 11,857,407 | +9,628,090 | 3,841,601 | -8,015,806 |
+| Developing | 879,552 | 2,393,549 | +1,513,997 | 2,778,239 | +384,690 |
+
+**Key finding:** The developed-country surge in 2021-2023 was overwhelmingly COVID-19 genomic surveillance. The USA and UK alone produced ~8M records in that period — more than the entire developing world's output across all three periods combined. That pandemic-driven boom is now over: developed-country annualized output dropped from 3.95M/yr to 1.38M/yr in 2024+.
+
+Developing countries, by contrast, show a steady upward trajectory across all three periods. Their annualized output rose from 293K/yr to 798K/yr to 999K/yr — a 3.4x increase from 2018-2020 to 2024+, with no decline. The 2024+ period already exceeds the full 2021-2023 output despite covering only ~2.8 years. China is the main driver, but the trend holds even excluding China.
+
+This means the post-2023 shift in the developing-country share (from 16.5% to 40.7%) is not an artifact of declining developed-country output alone — it reflects genuine growth in developing-country sequencing capacity. However, this growth is concentrated in a handful of middle-income countries (China, Republic of Korea, India, Brazil, Mexico) and does not extend to LDCs, SIDS, or LLDCs, whose combined share remains below 3%.
+
 ------------------------------------------------------------------------
 
 ## 4. Assessment: Could INSDC provenance data support criterion (b)?
@@ -214,7 +255,9 @@ INSDC databases were designed for scientific reproducibility, not for tracking b
 
 **Problem 5: Post-2023 growth is changing the picture, but not enough.**
 
-The developing-country share of new DSI records has risen from 25.4% to 40.7% post-2023, driven mainly by China. Excluding China, developing countries' post-2023 share is only 21.2% — essentially unchanged. China's growth is a capacity story, not a biodiversity-provenance story. This means a post-2023 filter does not solve the concentration problem; it reshapes it.
+The developing-country share of new DSI records has risen from 25.4% (all-time) to 40.7% (post-2023), driven mainly by China. Excluding China, developing countries' post-2023 share is only 21.2% — essentially unchanged. China's growth is a capacity story, not a biodiversity-provenance story. This means a post-2023 filter does not solve the concentration problem; it reshapes it.
+
+The three-year period analysis (section 3.9) shows that the developed-country share actually *increased* to 82.0% during 2021-2023, driven by COVID-19 genomic surveillance, before dropping back to 56.3% in 2024+. The developing-country trajectory is genuinely upward (293K/yr → 798K/yr → 999K/yr), but this growth is concentrated in middle-income countries and does not extend to LDCs, SIDS, or LLDCs. A post-2023 filter therefore reflects the end of a pandemic sequencing boom in developed countries more than it reflects a structural improvement in developing-country biodiversity data.
 
 ### 4.3 Comparison with the GBIF findings
 
@@ -242,6 +285,7 @@ This is consistent with the AHTEG's own recommendation (para. 21(d)) to "evaluat
 |-----------------------|-------------------------------------------------|
 | `insdc_provenance_country_maps.csv` | Main table: 246 countries × ENA + NCBI counts + UN classification |
 | `ena_per_country_counts.csv` | Raw ENA per-country counts (all, post-2023, environmental) |
+| `ena_period_counts.csv` | ENA per-country counts by 3-year period (2018-2020, 2021-2023, 2024+) |
 | `insdc_counts_all_legacy.csv` | NCBI BioSample per-country counts (all) |
 | `insdc_counts_post2023.csv` | NCBI BioSample per-country counts (post-2023) |
 | `insdc_counts_environmental.csv` | NCBI BioSample per-country counts (environmental) |
