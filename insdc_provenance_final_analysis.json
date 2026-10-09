@@ -1,43 +1,43 @@
 {
   "totals": {
-    "ena_all": 26735620,
+    "ena_all": 27701739,
     "ena_post2023": 6818673,
     "ena_env": 125405,
     "ncbi_all": 912108,
     "ncbi_post2023": 235128,
     "ncbi_env": 52815,
-    "countries_with_data": 244
+    "countries_with_data": 246
   },
   "by_region": {
     "Americas": {
-      "all": 9366339,
-      "post2023": 2512124,
-      "env": 13158,
-      "countries": 54
+      "all": 10157288,
+      "post2023": 2512449,
+      "env": 13164,
+      "countries": 55
     },
     "Europe": {
-      "all": 9342742,
-      "post2023": 1153463,
+      "all": 9519636,
+      "post2023": 1153501,
       "env": 95339,
-      "countries": 48
+      "countries": 49
     },
     "Asia": {
-      "all": 5510196,
-      "post2023": 2478805,
+      "all": 5510344,
+      "post2023": 2478840,
       "env": 5515,
       "countries": 48
     },
     "Oceania": {
-      "all": 724675,
-      "post2023": 243911,
+      "all": 728924,
+      "post2023": 244549,
       "env": 4108,
-      "countries": 27
+      "countries": 28
     },
     "Unmapped/Territory": {
-      "all": 704844,
-      "post2023": 201292,
-      "env": 5980,
-      "countries": 9
+      "all": 698723,
+      "post2023": 200256,
+      "env": 5974,
+      "countries": 8
     },
     "Africa": {
       "all": 1086824,
@@ -48,40 +48,40 @@
   },
   "by_dev_status": {
     "Developed": {
-      "all": 19001558,
-      "post2023": 3840748,
+      "all": 19967746,
+      "post2023": 3840786,
       "env": 108800,
-      "countries": 62
+      "countries": 63
     },
     "Developing": {
-      "all": 7029218,
-      "post2023": 2776633,
-      "env": 10625,
-      "countries": 173
+      "all": 7035270,
+      "post2023": 2777631,
+      "env": 10631,
+      "countries": 175
     },
     "Unmapped/Territory": {
-      "all": 704844,
-      "post2023": 201292,
-      "env": 5980,
-      "countries": 9
+      "all": 698723,
+      "post2023": 200256,
+      "env": 5974,
+      "countries": 8
     }
   },
   "by_subregion": {
     "Northern America": {
-      "all": 8445389,
+      "all": 9234683,
       "post2023": 2227083,
       "env": 10155,
       "countries": 5
     },
     "Northern Europe": {
-      "all": 5474893,
-      "post2023": 477860,
+      "all": 5651787,
+      "post2023": 477898,
       "env": 59260,
-      "countries": 14
+      "countries": 15
     },
     "Eastern Asia": {
-      "all": 4391579,
-      "post2023": 2150108,
+      "all": 4391727,
+      "post2023": 2150143,
       "env": 2915,
       "countries": 5
     },
@@ -98,10 +98,10 @@
       "countries": 6
     },
     "Unmapped/Territory": {
-      "all": 704844,
-      "post2023": 201292,
-      "env": 5980,
-      "countries": 9
+      "all": 698723,
+      "post2023": 200256,
+      "env": 5974,
+      "countries": 8
     },
     "Southern Europe": {
       "all": 902167,
@@ -110,10 +110,10 @@
       "countries": 15
     },
     "Latin America and the Caribbean": {
-      "all": 920950,
-      "post2023": 285041,
-      "env": 3003,
-      "countries": 49
+      "all": 922605,
+      "post2023": 285366,
+      "env": 3009,
+      "countries": 50
     },
     "Southern Asia": {
       "all": 363828,
@@ -170,10 +170,10 @@
       "countries": 7
     },
     "Micronesia": {
-      "all": 11462,
-      "post2023": 4821,
+      "all": 15711,
+      "post2023": 5459,
       "env": 3,
-      "countries": 6
+      "countries": 7
     }
   },
   "countries": [
@@ -187,7 +187,7 @@
       "ldc": "",
       "lldc": "",
       "sids": "",
-      "ena_all": 7841501,
+      "ena_all": 8630795,
       "ena_post2023": 1989524,
       "ena_env": 4999,
       "ncbi_all": 283885,
@@ -205,7 +205,7 @@
       "ldc": "",
       "lldc": "",
       "sids": "",
-      "ena_all": 3569793,
+      "ena_all": 3746618,
       "ena_post2023": 224244,
       "ena_env": 51680,
       "ncbi_all": 45236,
@@ -403,13 +403,13 @@
       "ldc": "",
       "lldc": "",
       "sids": "",
-      "ena_all": 321247,
-      "ena_post2023": 154112,
+      "ena_all": 321395,
+      "ena_post2023": 154147,
       "ena_env": 112,
       "ncbi_all": 46948,
       "ncbi_post2023": 16593,
       "ncbi_env": 824,
-      "insdc_names": "Korea; South Korea"
+      "insdc_names": "Korea; Republic of Korea; South Korea"
     },
     {
       "country": "Netherlands",
@@ -2428,24 +2428,6 @@
       "insdc_names": "Moldova"
     },
     {
-      "country": "__UNMAPPED__",
-      "iso3": "",
-      "m49": "",
-      "region": "",
-      "sub_region": "",
-      "dev_status": "",
-      "ldc": "",
-      "lldc": "",
-      "sids": "",
-      "ena_all": 6127,
-      "ena_post2023": 1036,
-      "ena_env": 6,
-      "ncbi_all": 0,
-      "ncbi_post2023": 0,
-      "ncbi_env": 0,
-      "insdc_names": "Isle of Man; Northern Mariana Islands; Republic of Korea; South Georgia and the South Sandwich Islands; Tromelin Island"
-    },
-    {
       "country": "__TERRITORY__",
       "iso3": "",
       "m49": "",
@@ -2455,13 +2437,13 @@
       "ldc": "",
       "lldc": "",
       "sids": "",
-      "ena_all": 6023,
+      "ena_all": 6029,
       "ena_post2023": 1884,
       "ena_env": 0,
       "ncbi_all": 0,
       "ncbi_post2023": 0,
       "ncbi_env": 0,
-      "insdc_names": "Baker Island; Bassas da India; Bouvet Island; Clipperton Island; Coral Sea Islands; Europa Island; Glorioso Islands; Howland Island; Jan Mayen; Johnston Atoll; Juan de Nova Island; Kerguelen Archipelago; Kingman Reef; Line Islands; Midway Islands; Navassa Island; Palmyra Atoll; Paracel Islands; Spratly Islands; Wake Island"
+      "insdc_names": "Baker Island; Bassas da India; Bouvet Island; Clipperton Island; Coral Sea Islands; Europa Island; Glorioso Islands; Howland Island; Jan Mayen; Johnston Atoll; Juan de Nova Island; Kerguelen Archipelago; Kingman Reef; Line Islands; Midway Islands; Navassa Island; Palmyra Atoll; Paracel Islands; Spratly Islands; Tromelin Island; Wake Island"
     },
     {
       "country": "United States Virgin Islands",
@@ -2660,6 +2642,24 @@
       "ncbi_post2023": 22,
       "ncbi_env": 0,
       "insdc_names": "Algeria"
+    },
+    {
+      "country": "Northern Mariana Islands",
+      "iso3": "MNP",
+      "m49": "580",
+      "region": "Oceania",
+      "sub_region": "Micronesia",
+      "dev_status": "Developing",
+      "ldc": "",
+      "lldc": "",
+      "sids": "x",
+      "ena_all": 4249,
+      "ena_post2023": 638,
+      "ena_env": 0,
+      "ncbi_all": 0,
+      "ncbi_post2023": 0,
+      "ncbi_env": 0,
+      "insdc_names": "Northern Mariana Islands"
     },
     {
       "country": "Niger",
@@ -3326,6 +3326,24 @@
       "ncbi_post2023": 0,
       "ncbi_env": 0,
       "insdc_names": "Macedonia; North Macedonia; The former Yugoslav Republic of Macedonia"
+    },
+    {
+      "country": "South Georgia and the South Sandwich Islands",
+      "iso3": "SGS",
+      "m49": "239",
+      "region": "Americas",
+      "sub_region": "Latin America and the Caribbean",
+      "dev_status": "Developing",
+      "ldc": "",
+      "lldc": "",
+      "sids": "",
+      "ena_all": 1655,
+      "ena_post2023": 325,
+      "ena_env": 6,
+      "ncbi_all": 0,
+      "ncbi_post2023": 0,
+      "ncbi_env": 0,
+      "insdc_names": "South Georgia and the South Sandwich Islands"
     },
     {
       "country": "Uzbekistan",
@@ -4334,6 +4352,24 @@
       "ncbi_post2023": 1,
       "ncbi_env": 0,
       "insdc_names": "Saint Martin"
+    },
+    {
+      "country": "Isle of Man",
+      "iso3": "IMN",
+      "m49": "833",
+      "region": "Europe",
+      "sub_region": "Northern Europe",
+      "dev_status": "Developed",
+      "ldc": "",
+      "lldc": "",
+      "sids": "",
+      "ena_all": 69,
+      "ena_post2023": 38,
+      "ena_env": 0,
+      "ncbi_all": 0,
+      "ncbi_post2023": 0,
+      "ncbi_env": 0,
+      "insdc_names": "Isle of Man"
     },
     {
       "country": "Aruba",

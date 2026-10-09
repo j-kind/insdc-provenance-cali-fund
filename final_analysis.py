@@ -174,6 +174,12 @@ INSDC_TO_UN = {
     "Norfolk Island": "Norfolk Island", "Palmyra Atoll": "__TERRITORY__",
     "Paracel Islands": "__TERRITORY__", "Spratly Islands": "__TERRITORY__",
     "Wake Island": "__TERRITORY__",
+    # Names found in ENA data that were initially unmapped
+    "Northern Mariana Islands": "Northern Mariana Islands",
+    "South Georgia and the South Sandwich Islands": "South Georgia and the South Sandwich Islands",
+    "Republic of Korea": "Republic of Korea",
+    "Isle of Man": "Isle of Man",
+    "Tromelin Island": "__TERRITORY__",
 }
 
 def load_un_classifications():

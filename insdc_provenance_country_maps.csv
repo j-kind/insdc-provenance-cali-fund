@@ -1,6 +1,6 @@
 country,iso3,m49,region,sub_region,dev_status,ldc,lldc,sids,ena_all,ena_post2023,ena_env,ncbi_all,ncbi_post2023,ncbi_env,insdc_names
-United States of America,USA,840,Americas,Northern America,Developed,,,,7841501,1989524,4999,283885,34775,49681,USA
-United Kingdom of Great Britain and Northern Ireland,GBR,826,Europe,Northern Europe,Developed,,,,3569793,224244,51680,45236,10906,0,United Kingdom
+United States of America,USA,840,Americas,Northern America,Developed,,,,8630795,1989524,4999,283885,34775,49681,USA
+United Kingdom of Great Britain and Northern Ireland,GBR,826,Europe,Northern Europe,Developed,,,,3746618,224244,51680,45236,10906,0,United Kingdom
 China,CHN,156,Asia,Eastern Asia,Developing,,,,3563480,1763973,2456,153742,60039,393,China
 Germany,DEU,276,Europe,Western Europe,Developed,,,,1181175,124197,9719,47226,11851,55,Germany
 Denmark,DNK,208,Europe,Northern Europe,Developed,,,,715931,63580,2003,14635,1956,206,Denmark
@@ -11,7 +11,7 @@ __OCEANS_SEAS__,,,,,,,,,456769,98870,5260,7,0,0,Arctic Ocean; Atlantic Ocean; Ba
 France,FRA,250,Europe,Western Europe,Developed,,,,456076,89048,10901,12162,5165,617,France
 Spain,ESP,724,Europe,Southern Europe,Developed,,,,408251,79974,2668,15845,5486,101,Spain
 Switzerland,CHE,756,Europe,Western Europe,Developed,,,,369283,55101,1685,8747,2916,0,Switzerland
-Republic of Korea,KOR,410,Asia,Eastern Asia,Developing,,,,321247,154112,112,46948,16593,824,Korea; South Korea
+Republic of Korea,KOR,410,Asia,Eastern Asia,Developing,,,,321395,154147,112,46948,16593,824,Korea; Republic of Korea; South Korea
 Netherlands,NLD,528,Europe,Western Europe,Developed,,,,287137,52877,1205,13146,4315,6,Netherlands
 Finland,FIN,246,Europe,Northern Europe,Developed,,,,273778,23027,454,7957,3483,0,Finland
 Italy,ITA,380,Europe,Southern Europe,Developed,,,,269511,71369,3823,14859,4335,278,Italy
@@ -124,8 +124,7 @@ Curaçao,CUW,531,Americas,Latin America and the Caribbean,Developing,,,x,6288,30
 Serbia,SRB,688,Europe,Southern Europe,Developed,,,,6222,1702,8,622,201,0,Serbia; Serbia and Montenegro; Yugoslavia
 Nicaragua,NIC,558,Americas,Latin America and the Caribbean,Developing,,,,6216,474,5,848,0,0,Nicaragua
 Republic of Moldova,MDA,498,Europe,Eastern Europe,Developed,,x,,6139,1290,3,31,31,0,Moldova
-__UNMAPPED__,,,,,,,,,6127,1036,6,0,0,0,Isle of Man; Northern Mariana Islands; Republic of Korea; South Georgia and the South Sandwich Islands; Tromelin Island
-__TERRITORY__,,,,,,,,,6023,1884,0,0,0,0,Baker Island; Bassas da India; Bouvet Island; Clipperton Island; Coral Sea Islands; Europa Island; Glorioso Islands; Howland Island; Jan Mayen; Johnston Atoll; Juan de Nova Island; Kerguelen Archipelago; Kingman Reef; Line Islands; Midway Islands; Navassa Island; Palmyra Atoll; Paracel Islands; Spratly Islands; Wake Island
+__TERRITORY__,,,,,,,,,6029,1884,0,0,0,0,Baker Island; Bassas da India; Bouvet Island; Clipperton Island; Coral Sea Islands; Europa Island; Glorioso Islands; Howland Island; Jan Mayen; Johnston Atoll; Juan de Nova Island; Kerguelen Archipelago; Kingman Reef; Line Islands; Midway Islands; Navassa Island; Palmyra Atoll; Paracel Islands; Spratly Islands; Tromelin Island; Wake Island
 United States Virgin Islands,VIR,850,Americas,Latin America and the Caribbean,Developing,,,x,6007,1893,0,0,0,0,Virgin Islands
 Seychelles,SYC,690,Africa,Sub-Saharan Africa,Developing,,,x,5657,756,0,0,0,0,Seychelles
 Jordan,JOR,400,Asia,Western Asia,Developing,,,,5481,2158,0,1491,104,0,Jordan
@@ -137,6 +136,7 @@ Oman,OMN,512,Asia,Western Asia,Developing,,,,4960,2098,0,6,4,0,Oman
 Mauritius,MUS,480,Africa,Sub-Saharan Africa,Developing,,,x,4897,1220,7,0,0,0,Mauritius
 Guam,GUM,316,Oceania,Micronesia,Developing,,,x,4703,1581,3,0,0,0,Guam
 Algeria,DZA,12,Africa,Northern Africa,Developing,,,,4547,1889,13,39,22,0,Algeria
+Northern Mariana Islands,MNP,580,Oceania,Micronesia,Developing,,,x,4249,638,0,0,0,0,Northern Mariana Islands
 Niger,NER,562,Africa,Sub-Saharan Africa,Developing,x,x,,4196,1068,0,6,6,0,Niger
 Cuba,CUB,192,Americas,Latin America and the Caribbean,Developing,,,x,4181,1225,9,135,0,0,Cuba
 Sudan,SDN,729,Africa,Northern Africa,Developing,x,,,3950,651,0,82,65,0,Sudan
@@ -174,6 +174,7 @@ Faroe Islands,FRO,234,Europe,Northern Europe,Developed,,,,1741,855,0,17,0,0,Faro
 Azerbaijan,AZE,31,Asia,Western Asia,Developing,,x,,1726,683,0,1,0,0,Azerbaijan
 Liberia,LBR,430,Africa,Sub-Saharan Africa,Developing,x,,,1702,400,0,4,4,0,Liberia
 North Macedonia,MKD,807,Europe,Southern Europe,Developed,,x,,1674,517,7,152,0,0,Macedonia; North Macedonia; The former Yugoslav Republic of Macedonia
+South Georgia and the South Sandwich Islands,SGS,239,Americas,Latin America and the Caribbean,Developing,,,,1655,325,6,0,0,0,South Georgia and the South Sandwich Islands
 Uzbekistan,UZB,860,Asia,Central Asia,Developing,,x,,1649,753,0,6,2,0,Uzbekistan
 Bhutan,BTN,64,Asia,Southern Asia,Developing,x,x,,1512,455,0,0,0,0,Bhutan
 Solomon Islands,SLB,90,Oceania,Melanesia,Developing,x,,x,1492,740,8,16,10,0,Solomon Islands
@@ -230,6 +231,7 @@ Norfolk Island,NFK,574,Oceania,Australia and New Zealand,Developed,,,,132,33,0,0
 Guernsey,GGY,831,Europe,Northern Europe,Developed,,,,116,43,0,0,0,0,Guernsey
 Antigua and Barbuda,ATG,28,Americas,Latin America and the Caribbean,Developing,,,x,105,65,0,0,0,0,Antigua and Barbuda
 Saint Martin (French Part),MAF,663,Americas,Latin America and the Caribbean,Developing,,,,101,76,0,4,1,0,Saint Martin
+Isle of Man,IMN,833,Europe,Northern Europe,Developed,,,,69,38,0,0,0,0,Isle of Man
 Aruba,ABW,533,Americas,Latin America and the Caribbean,Developing,,,x,67,9,0,6,0,0,Aruba
 Montserrat,MSR,500,Americas,Latin America and the Caribbean,Developing,,,x,53,18,0,0,0,0,Montserrat
 Gibraltar,GIB,292,Europe,Southern Europe,Developed,,,,45,14,0,0,0,0,Gibraltar

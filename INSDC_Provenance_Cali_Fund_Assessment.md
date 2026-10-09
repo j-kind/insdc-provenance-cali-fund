@@ -9,7 +9,7 @@ editor_options:
 
 ## Assessment of whether INSDC provenance data could support a country-level allocation methodology for the Cali Fund
 
-**Date:** 8 October 2026 **Data queried:** 8 October 2026 **Prepared for:** IIFB COP17 delegation
+**Date:** 9 October 2026 **Data queried:** 8 October 2026 (corrected 9 October 2026) **Prepared for:** IIFB COP17 delegation
 
 ------------------------------------------------------------------------
 
@@ -45,8 +45,8 @@ INSDC is the consortium of NCBI (GenBank/SRA), ENA (EMBL-EBI), and DDBJ. They ex
 
 ### 2.3 Limitations
 
-- **ENA API has no count endpoint and no offset pagination.** Maximum 500,000 records per query. For countries exceeding this (USA, China, UK, Germany, Denmark, Canada, Australia), we subdivided by year and quarter. Some quarterly subdivisions for USA and China still approached the cap, and the 2024+ range for USA required quarterly subdivision across 2024, 2025, and 2026.
-- **NCBI BioSample `country[all]` field** uses a different matching scope than ENA's `country="X"`. NCBI counts are systematically lower (912K vs. 26.7M per-country sum), likely because BioSample's country attribute coverage differs from ENA's sample-level country metadata. The ENA counts are more comprehensive.
+- **ENA API has no count endpoint and no offset pagination.** Maximum 500,000 records per query. For countries exceeding this (USA, China, UK, Germany, Denmark, Canada, Australia), we subdivided by year and quarter. For quarters that still exceeded the cap (USA 2021-2022, UK 2021 Q4), we further subdivided monthly to obtain exact counts.
+- **NCBI BioSample `country[all]` field** uses exact text matching, missing records with sub-national detail (e.g., "USA: California" does not match `country="USA"[all]`). NCBI per-country counts are therefore systematically lower than the total (912K vs. 2.36M). The `[country]` field tag provides broader matching but was not used. ENA counts are the primary source and are not affected by this limitation.
 - **Country field quality:** The INSDC country field uses a controlled vocabulary but is not uniformly populated. Many records have no country, some have sub-national detail (e.g., "Kenya: Mount Kenya"), and some use historical names (e.g., "Zaire", "USSR", "Burma"). We mapped all historical names to their modern successors.
 - **Oceans and seas:** 456,769 records are tagged to oceans/seas rather than countries. These cannot be attributed to any Party.
 - **The `country` field records the locality of sample isolation, not the country of origin of the genetic resource** as understood in the Nagoya Protocol sense. A sample collected in Kenya but sequenced in the UK is tagged "Kenya" — which is the correct provenance direction for criterion (b), but the distinction between provider country and sequencing country is not captured in this field alone.
@@ -59,46 +59,46 @@ INSDC is the consortium of NCBI (GenBank/SRA), ENA (EMBL-EBI), and DDBJ. They ex
 
 | Metric | ENA | NCBI BioSample |
 |------------------|-----------------|-------------------------------------|
-| Total non-human samples with country provenance (all) | **26,735,620** | 912,108 |
+| Total non-human samples with country provenance (all) | **27,701,739** | 912,108 |
 | Post-2023 records with country | **6,818,673** | 235,128 |
 | Environmentally sourced records with country | **125,405** | 52,815 |
-| Countries/territories with \>= 1 record | **244** | \~170 |
+| Countries/territories with \>= 1 record | **246** | \~170 |
 
 ### 3.2 Map 1: All legacy records — by region and development status
 
-| Region                | Countries | Records   | \% Share |
-|-----------------------|-----------|-----------|----------|
-| Americas              | 54        | 9,366,339 | 35.0%    |
-| Europe                | 48        | 9,342,742 | 34.9%    |
-| Asia                  | 48        | 5,510,196 | 20.6%    |
-| Africa                | 58        | 1,086,824 | 4.1%     |
-| Oceania               | 27        | 724,675   | 2.7%     |
-| Oceans/Seas/Territory | 9         | 704,844   | 2.6%     |
+| Region                | Countries | Records    | \% Share |
+|-----------------------|-----------|------------|----------|
+| Americas              | 55        | 10,157,288 | 36.7%    |
+| Europe                | 49        | 9,519,636  | 34.4%    |
+| Asia                  | 48        | 5,510,344  | 19.9%    |
+| Africa                | 58        | 1,086,824  | 3.9%     |
+| Oceania               | 28        | 728,924    | 2.6%     |
+| Oceans/Seas/Territory | 8         | 698,723    | 2.5%     |
 
 | Development status | Countries | Records    | \% Share  |
 |--------------------|-----------|------------|-----------|
-| **Developed**      | 62        | 19,001,558 | **71.1%** |
-| **Developing**     | 173       | 7,029,218  | **26.3%** |
-| Unmapped/Territory | 9         | 704,844    | 2.6%      |
+| **Developed**      | 63        | 19,967,746 | **72.1%** |
+| **Developing**     | 175       | 7,035,270  | **25.4%** |
+| Unmapped/Territory | 8         | 698,723    | 2.5%      |
 
-**Key finding:** Developed countries hold 71% of all non-human DSI records with country provenance. The USA alone accounts for 29.3% (7.8M records), more than all of Africa (4.1%).
+**Key finding:** Developed countries hold 72.1% of all non-human DSI records with country provenance. The USA alone accounts for 31.1% (8.6M records), more than all of Africa (3.9%).
 
 ### 3.3 Map 2: Post-2023 records — by region and development status
 
 | Region   | Records   | \% Share | Growth rate |
 |----------|-----------|----------|-------------|
-| Americas | 2,512,124 | 36.8%    | 26.8%       |
-| Asia     | 2,478,805 | 36.4%    | **45.0%**   |
-| Europe   | 1,153,463 | 16.9%    | 12.3%       |
-| Oceania  | 243,911   | 3.6%     | 33.7%       |
+| Americas | 2,512,449 | 36.8%    | 24.7%       |
+| Asia     | 2,478,840 | 36.4%    | **45.0%**   |
+| Europe   | 1,153,501 | 16.9%    | 12.1%       |
+| Oceania  | 244,549   | 3.6%     | 33.5%       |
 | Africa   | 229,078   | 3.4%     | 21.1%       |
 
 | Development status | Records   | \% Share  | Growth rate |
 |--------------------|-----------|-----------|-------------|
-| **Developed**      | 3,840,748 | 56.3%     | 20.2%       |
-| **Developing**     | 2,776,633 | **40.7%** | **39.5%**   |
+| **Developed**      | 3,840,786 | 56.3%     | 19.2%       |
+| **Developing**     | 2,777,631 | **40.7%** | **39.5%**   |
 
-**Key finding:** The developing-country share of new DSI records jumped from 26.3% (all-time) to 40.7% (post-2023). China's post-2023 output alone (1.76M records) accounts for 25.8% of all post-2023 records. This is driven primarily by China's massive sequencing capacity growth, followed by Republic of Korea, India, Brazil, and Mexico.
+**Key finding:** The developing-country share of new DSI records jumped from 25.4% (all-time) to 40.7% (post-2023). China's post-2023 output alone (1.76M records) accounts for 25.8% of all post-2023 records. This is driven primarily by China's massive sequencing capacity growth, followed by Republic of Korea, India, Brazil, and Mexico.
 
 ### 3.4 Map 3: Environmentally sourced records — by region and development status
 
@@ -115,7 +115,7 @@ INSDC is the consortium of NCBI (GenBank/SRA), ENA (EMBL-EBI), and DDBJ. They ex
 | **Developed**      | 108,800 | **86.8%** |
 | **Developing**     | 10,625  | 8.5%      |
 
-**Key finding:** Environmental DSI records are overwhelmingly concentrated in developed countries (86.8%), with the UK alone holding 51,680 records (41.2% of the global total). This reflects the fact that eDNA/metagenome sequencing capacity is concentrated in a handful of European institutions. The `environmental_sample` field is also sparsely populated — only 125,405 records out of 26.7M (0.5%) are flagged as environmental, suggesting significant under-reporting.
+**Key finding:** Environmental DSI records are overwhelmingly concentrated in developed countries (86.8%), with the UK alone holding 51,680 records (41.2% of the global total). This reflects the fact that eDNA/metagenome sequencing capacity is concentrated in a handful of European institutions. The `environmental_sample` field is also sparsely populated — only 125,405 records out of 27.7M (0.5%) are flagged as environmental, suggesting significant under-reporting.
 
 ### 3.5 Vulnerable country groups
 
@@ -125,15 +125,15 @@ INSDC is the consortium of NCBI (GenBank/SRA), ENA (EMBL-EBI), and DDBJ. They ex
 | SIDS  | 51        | 293,880     | 88,963    | 1,320         | 1.1%         |
 | LLDC  | 32        | 398,024     | 125,924   | 471           | 1.5%         |
 
-All 46 LDCs combined hold fewer DSI records with provenance (760,903) than Denmark alone (715,931). The 51 SIDS combined hold 293,880 — fewer than Switzerland (369,283).
+All 47 LDCs combined hold fewer DSI records with provenance (760,903) than Denmark alone (715,931). The 51 SIDS combined hold 293,880 — fewer than Switzerland (369,283).
 
 ### 3.6 Top 20 countries (ENA, all records)
 
 | \# | Country | ISO3 | Status | All records | Post-2023 | Environmental | \% Share |
 |---------|-------------------|---------|--------------|-----------------|---------|-----------------|--------------|
-| 1 | United States | USA | Developed | 7,841,501 | 1,989,524 | 4,999 | 29.3% |
-| 2 | United Kingdom | GBR | Developed | 3,569,793 | 224,244 | 51,680 | 13.4% |
-| 3 | China | CHN | Developing | 3,563,480 | 1,763,973 | 2,456 | 13.3% |
+| 1 | United States | USA | Developed | 8,630,795 | 1,989,524 | 4,999 | 31.1% |
+| 2 | United Kingdom | GBR | Developed | 3,746,618 | 224,244 | 51,680 | 13.5% |
+| 3 | China | CHN | Developing | 3,563,480 | 1,763,973 | 2,456 | 12.9% |
 | 4 | Germany | DEU | Developed | 1,181,175 | 124,197 | 9,719 | 4.4% |
 | 5 | Denmark | DNK | Developed | 715,931 | 63,580 | 2,003 | 2.7% |
 | 6 | Canada | CAN | Developed | 583,136 | 231,073 | 5,117 | 2.2% |
@@ -198,7 +198,7 @@ The INSDC `country` provenance field is populated for millions of non-human sequ
 
 **Problem 1: Severe concentration bias.**
 
-The top 3 countries (USA, UK, China) account for 56% of all records. The top 10 account for 80%. Africa, with 58 countries, holds 4.1% of records. This is the same "absence of data is not absence of biodiversity" problem identified in the GBIF analysis by TierraViva AI (gbif-criterion-c-a-short.pdf). Allocating Cali Fund resources based on DSI provenance volume would channel funds to the countries with the most sequencing infrastructure, not the countries that are most biodiverse or most in need.
+The top 3 countries (USA, UK, China) account for 57.5% of all records. The top 10 account for 80%. Africa, with 58 countries, holds 3.9% of records. This is the same "absence of data is not absence of biodiversity" problem identified in the GBIF analysis by TierraViva AI (gbif-criterion-c-a-short.pdf). Allocating Cali Fund resources based on DSI provenance volume would channel funds to the countries with the most sequencing infrastructure, not the countries that are most biodiverse or most in need.
 
 **Problem 2: The country field records collection locality, not sovereign origin of the genetic resource.**
 
@@ -206,7 +206,7 @@ The INSDC `country` field documents where the sample was physically collected, n
 
 **Problem 3: The environmental_sample field is severely under-populated.**
 
-Only 125,405 records (0.5% of 26.7M) are flagged as environmentally sourced. This is implausibly low given the explosive growth of metagenomics and eDNA sequencing. The field is optional in the INSDC submission schema and most submitters do not populate it. Any allocation methodology relying on this field would be built on a very thin and biased data layer.
+Only 125,405 records (0.5% of 27.7M) are flagged as environmentally sourced. This is implausibly low given the explosive growth of metagenomics and eDNA sequencing. The field is optional in the INSDC submission schema and most submitters do not populate it. Any allocation methodology relying on this field would be built on a very thin and biased data layer.
 
 **Problem 4: The data is not structured for benefit-sharing allocation.**
 
@@ -214,11 +214,11 @@ INSDC databases were designed for scientific reproducibility, not for tracking b
 
 **Problem 5: Post-2023 growth is changing the picture, but not enough.**
 
-The developing-country share of new DSI records has risen from 26.3% to 40.7% post-2023, driven mainly by China. Excluding China, developing countries' post-2023 share is only 21.2% — essentially unchanged. China's growth is a capacity story, not a biodiversity-provenance story. This means a post-2023 filter does not solve the concentration problem; it reshapes it.
+The developing-country share of new DSI records has risen from 25.4% to 40.7% post-2023, driven mainly by China. Excluding China, developing countries' post-2023 share is only 21.2% — essentially unchanged. China's growth is a capacity story, not a biodiversity-provenance story. This means a post-2023 filter does not solve the concentration problem; it reshapes it.
 
 ### 4.3 Comparison with the GBIF findings
 
-The GBIF analysis (gbif-criterion-c-a-short.pdf) found a "clear linear relationship between economic capacity and biodiversity information" using 1.1 billion occurrence records. Our INSDC analysis finds the same pattern at the sequence level: developed countries hold 71% of DSI records with provenance, and the relationship between economic capacity and DSI provenance volume is strongly linear. The GBIF paper's conclusion applies equally here: **"Allocating funding based on the available data about the amount of biodiversity in a country will penalise least developed countries, SIDS and low income developing countries."**
+The GBIF analysis (gbif-criterion-c-a-short.pdf) found a "clear linear relationship between economic capacity and biodiversity information" using 1.1 billion occurrence records. Our INSDC analysis finds the same pattern at the sequence level: developed countries hold 72.1% of DSI records with provenance, and the relationship between economic capacity and DSI provenance volume is strongly linear. The GBIF paper's conclusion applies equally here: **"Allocating funding based on the available data about the amount of biodiversity in a country will penalise least developed countries, SIDS and low income developing countries."**
 
 ### 4.4 Conclusion
 
@@ -240,16 +240,16 @@ This is consistent with the AHTEG's own recommendation (para. 21(d)) to "evaluat
 
 | File | Description |
 |-----------------------|-------------------------------------------------|
-| `insdc_provenance_country_maps.csv` | Main table: 244 countries × ENA + NCBI counts + UN classification |
+| `insdc_provenance_country_maps.csv` | Main table: 246 countries × ENA + NCBI counts + UN classification |
 | `ena_per_country_counts.csv` | Raw ENA per-country counts (all, post-2023, environmental) |
 | `insdc_counts_all_legacy.csv` | NCBI BioSample per-country counts (all) |
 | `insdc_counts_post2023.csv` | NCBI BioSample per-country counts (post-2023) |
 | `insdc_counts_environmental.csv` | NCBI BioSample per-country counts (environmental) |
 | `insdc_provenance_final_analysis.json` | Full analysis in JSON format |
 | `query_insdc_provenance.py` | NCBI ESearch query script |
-| `download_ena_provenance.py` | ENA bulk download script |
-| `analyze_insdc_provenance.py` | NCBI analysis script |
 | `final_analysis.py` | Combined ENA+NCBI analysis script |
+| `make_maps.py` | Generate all choropleth maps |
+| `make_map1_bwr.py` | Generate map 1 with blue-white-red diverging scale |
 
 ------------------------------------------------------------------------
 
@@ -258,5 +258,5 @@ This is consistent with the AHTEG's own recommendation (para. 21(d)) to "evaluat
 - ENA portal API was queried on 8 October 2026. The `result=sample` endpoint returns all sample records in the ENA, which includes records from SRA/ERA, and is more comprehensive than NCBI's BioSample database.
 - The non-human filter `NOT tax_tree(9606)` excludes all *Homo sapiens* records, including human-associated microbiome records that might be tagged with a human host taxon.
 - Country names follow the INSDC controlled vocabulary (296 entries including historical names and oceans). All were mapped to UN M.49 country classifications for aggregation.
-- The sum of per-country counts (26.7M) exceeds the total query count because some records have country annotations matching multiple INSDC vocabulary entries (e.g., "USA: California" matches both "USA" and potentially other sub-national entries).
-- For the 7 countries that exceeded the 500k query cap (USA, China, UK, Germany, Denmark, Canada, Australia), counts were obtained by summing across year ranges (2015-2026) with quarterly subdivision for any year that still exceeded 500k.
+- The sum of per-country counts (27.7M) exceeds the total query count because some records have country annotations matching multiple INSDC vocabulary entries (e.g., "USA: California" matches both "USA" and potentially other sub-national entries).
+- For the 7 countries that exceeded the 500k query cap (USA, China, UK, Germany, Denmark, Canada, Australia), counts were obtained by summing across year ranges (2015-2026) with quarterly subdivision for any year that still exceeded 500k. For quarters that still exceeded the cap (USA 2021 Q3-Q4, 2022 Q1-Q2; UK 2021 Q4), monthly subdivision was used to obtain exact counts.
