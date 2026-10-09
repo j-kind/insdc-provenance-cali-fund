@@ -227,6 +227,63 @@ Developing countries, by contrast, show a steady upward trajectory across all th
 
 This means the post-2023 shift in the developing-country share (from 16.5% to 40.7%) is not an artifact of declining developed-country output alone — it reflects genuine growth in developing-country sequencing capacity. However, this growth is concentrated in a handful of middle-income countries (China, Republic of Korea, India, Brazil, Mexico) and does not extend to LDCs, SIDS, or LLDCs, whose combined share remains below 3%.
 
+### 3.10 Period growth by World Bank income group
+
+The same period data was broken out by World Bank income classification to test whether the growth trend extends beyond the broad developed/developing binary.
+
+**Annualized output (records per year):**
+
+| Income group | 2018-2020 | 2021-2023 | 2024+ | Trend |
+|--------------|-----------|-----------|-------|-------|
+| High income | 768,538 | 3,980,732 | 1,468,364 | Peaked (COVID), declining |
+| Upper middle income | 209,914 | 571,190 | 778,773 | Steady increase |
+| Lower middle income | 39,884 | 123,178 | 85,289 | Peaked, declining |
+| Low income | 13,836 | 29,038 | 34,974 | Modest increase |
+
+*2024+ annualized based on ~2.78 years (Jan 2024 to Oct 2026, partial).*
+
+**Percentage growth rate (period vs previous period, annualized):**
+
+| Income group | 2021-2023 vs 2018-2020 | 2024+ vs 2021-2023 |
+|--------------|------------------------|---------------------|
+| High income | +418% | -63% |
+| Upper middle income | +172% | +36% |
+| Lower middle income | +209% | -31% |
+| Low income | +110% | +20% |
+
+*Growth rate = (annualized rate in period / annualized rate in previous period - 1) × 100.*
+
+**Share of each period:**
+
+| Income group | 2018-2020 | 2021-2023 | 2024+ |
+|--------------|-----------|-----------|-------|
+| High income | 72.3% | **82.6%** | 59.9% |
+| Upper middle income | 19.8% | 11.8% | **31.7%** |
+| Lower middle income | 3.8% | 2.6% | 3.5% |
+| Low income | 1.3% | 0.6% | 1.4% |
+
+**Key finding:** The post-2023 shift is almost entirely an upper-middle-income story. Upper-middle-income countries (led by China and Republic of Korea) show steady growth across all three periods, with their share rising from 19.8% to 31.7%. Lower-middle-income countries peaked in 2021-2023 at 123K/yr and are now declining. Low-income countries show modest but consistent growth (14K → 29K → 35K/yr), yet their share of global records remains stuck at ~1.4% — the same level as in 2018-2020. The high-income group's 2021-2023 surge (+418%) and subsequent decline (-63%) tracks the COVID-19 genomic surveillance cycle almost exactly.
+
+### 3.11 Period growth by LDC, SIDS, and LLDC
+
+**Annualized output and percentage growth:**
+
+| Group | 2018-2020/yr | 2021-2023/yr | Growth | 2024+/yr | Growth |
+|-------|-------------|-------------|--------|---------|--------|
+| LDC (47 countries) | 23,368 | 78,780 | +237% | 58,094 | -26% |
+| SIDS (52 countries) | 12,127 | 36,852 | +204% | 32,231 | -13% |
+| LLDC (32 countries) | 14,438 | 34,531 | +139% | 45,297 | +31% |
+
+**Share of global records in each period:**
+
+| Group | 2018-2020 | 2021-2023 | 2024+ |
+|-------|-----------|-----------|-------|
+| LDC | 2.2% | 1.6% | 2.4% |
+| SIDS | 1.1% | 0.8% | 1.3% |
+| LLDC | 1.4% | 0.7% | 1.8% |
+
+**Key finding:** All three vulnerable country groups hover at 1-2% of global DSI provenance records across all periods, with no upward trend in their share. LDCs and SIDS both peaked in 2021-2023 and are declining in 2024+. LLDCs are the only group still growing in 2024+ (+31% vs 2021-2023), but their share of the global total remains at 1.8%. The post-2023 shift that lifted the developing-country share from 16.5% to 40.7% has not produced any measurable improvement for the countries the Cali Fund is designed to support.
+
 ------------------------------------------------------------------------
 
 ## 4. Assessment: Could INSDC provenance data support criterion (b)?
@@ -286,6 +343,8 @@ This is consistent with the AHTEG's own recommendation (para. 21(d)) to "evaluat
 | `insdc_provenance_country_maps.csv` | Main table: 246 countries × ENA + NCBI counts + UN classification |
 | `ena_per_country_counts.csv` | Raw ENA per-country counts (all, post-2023, environmental) |
 | `ena_period_counts.csv` | ENA per-country counts by 3-year period (2018-2020, 2021-2023, 2024+) |
+| `ena_period_by_income.csv` | Period counts aggregated by World Bank income group |
+| `ena_period_by_vulnerability.csv` | Period counts aggregated by LDC, SIDS, and LLDC |
 | `insdc_counts_all_legacy.csv` | NCBI BioSample per-country counts (all) |
 | `insdc_counts_post2023.csv` | NCBI BioSample per-country counts (post-2023) |
 | `insdc_counts_environmental.csv` | NCBI BioSample per-country counts (environmental) |
