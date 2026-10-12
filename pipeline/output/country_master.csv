@@ -1,0 +1,297 @@
+insdc_name,un_name,iso3,m49,region,sub_region,dev_status,ldc,lldc,sids,wb_income
+Afghanistan,Afghanistan,AFG,4,Asia,Southern Asia,Developing,x,x,,Low income
+Albania,Albania,ALB,8,Europe,Southern Europe,Developed,,,,Upper middle income
+Algeria,Algeria,DZA,12,Africa,Northern Africa,Developing,,,,Upper middle income
+American Samoa,American Samoa,ASM,16,Oceania,Polynesia,Developing,,,x,High income
+Andorra,Andorra,AND,20,Europe,Southern Europe,Developed,,,,High income
+Angola,Angola,AGO,24,Africa,Sub-Saharan Africa,Developing,x,,,Lower middle income
+Anguilla,Anguilla,AIA,660,Americas,Latin America and the Caribbean,Developing,,,x,Unknown
+Antarctica,Antarctica,ATA,10,,,,,,,Unknown
+Antigua and Barbuda,Antigua and Barbuda,ATG,28,Americas,Latin America and the Caribbean,Developing,,,x,High income
+Arctic Ocean,__OCEANS_SEAS__,,,,,,,,,Unknown
+Argentina,Argentina,ARG,32,Americas,Latin America and the Caribbean,Developing,,,,Upper middle income
+Armenia,Armenia,ARM,51,Asia,Western Asia,Developing,,x,,Upper middle income
+Aruba,Aruba,ABW,533,Americas,Latin America and the Caribbean,Developing,,,x,High income
+Ashmore and Cartier Islands,__TERRITORY__,,,,,,,,,Unknown
+Atlantic Ocean,__OCEANS_SEAS__,,,,,,,,,Unknown
+Australia,Australia,AUS,36,Oceania,Australia and New Zealand,Developed,,,,High income
+Austria,Austria,AUT,40,Europe,Western Europe,Developed,,,,High income
+Azerbaijan,Azerbaijan,AZE,31,Asia,Western Asia,Developing,,x,,Upper middle income
+Bahamas,Bahamas,BHS,44,Americas,Latin America and the Caribbean,Developing,,,x,High income
+Bahrain,Bahrain,BHR,48,Asia,Western Asia,Developing,,,,High income
+Baltic Sea,__OCEANS_SEAS__,,,,,,,,,Unknown
+Baker Island,__TERRITORY__,,,,,,,,,Unknown
+Bangladesh,Bangladesh,BGD,50,Asia,Southern Asia,Developing,x,,,Lower middle income
+Barbados,Barbados,BRB,52,Americas,Latin America and the Caribbean,Developing,,,x,High income
+Bassas da India,__TERRITORY__,,,,,,,,,Unknown
+Belarus,Belarus,BLR,112,Europe,Eastern Europe,Developed,,,,Upper middle income
+Belgium,Belgium,BEL,56,Europe,Western Europe,Developed,,,,High income
+Belize,Belize,BLZ,84,Americas,Latin America and the Caribbean,Developing,,,x,Upper middle income
+Benin,Benin,BEN,204,Africa,Sub-Saharan Africa,Developing,x,,,Lower middle income
+Bermuda,Bermuda,BMU,60,Americas,Northern America,Developed,,,,High income
+Bhutan,Bhutan,BTN,64,Asia,Southern Asia,Developing,x,x,,Lower middle income
+Bolivia,Bolivia (Plurinational State of),BOL,68,Americas,Latin America and the Caribbean,Developing,,x,,Lower middle income
+Borneo,__MULTINATIONAL__,,,,,,,,,Unknown
+Bosnia and Herzegovina,Bosnia and Herzegovina,BIH,70,Europe,Southern Europe,Developed,,,,Upper middle income
+Botswana,Botswana,BWA,72,Africa,Sub-Saharan Africa,Developing,,x,,Upper middle income
+Bouvet Island,__TERRITORY__,,,,,,,,,Unknown
+Brazil,Brazil,BRA,76,Americas,Latin America and the Caribbean,Developing,,,,Upper middle income
+British Virgin Islands,British Virgin Islands,VGB,92,Americas,Latin America and the Caribbean,Developing,,,x,High income
+Brunei,Brunei Darussalam,BRN,96,Asia,South-eastern Asia,Developing,,,,High income
+Bulgaria,Bulgaria,BGR,100,Europe,Eastern Europe,Developed,,,,High income
+Burkina Faso,Burkina Faso,BFA,854,Africa,Sub-Saharan Africa,Developing,x,x,,Low income
+Burundi,Burundi,BDI,108,Africa,Sub-Saharan Africa,Developing,x,x,,Low income
+Cambodia,Cambodia,KHM,116,Asia,South-eastern Asia,Developing,x,,,Lower middle income
+Cameroon,Cameroon,CMR,120,Africa,Sub-Saharan Africa,Developing,,,,Lower middle income
+Canada,Canada,CAN,124,Americas,Northern America,Developed,,,,High income
+Cape Verde,Cabo Verde,CPV,132,Africa,Sub-Saharan Africa,Developing,,,x,Lower middle income
+Cayman Islands,Cayman Islands,CYM,136,Americas,Latin America and the Caribbean,Developing,,,,High income
+Central African Republic,Central African Republic,CAF,140,Africa,Sub-Saharan Africa,Developing,x,x,,Low income
+Chad,Chad,TCD,148,Africa,Sub-Saharan Africa,Developing,x,x,,Low income
+Chile,Chile,CHL,152,Americas,Latin America and the Caribbean,Developing,,,,High income
+China,China,CHN,156,Asia,Eastern Asia,Developing,,,,Upper middle income
+Christmas Island,Christmas Island,CXR,162,Oceania,Australia and New Zealand,Developed,,,,Unknown
+Clipperton Island,__TERRITORY__,,,,,,,,,Unknown
+Cocos Islands,Cocos (Keeling) Islands,CCK,166,Oceania,Australia and New Zealand,Developed,,,,Unknown
+Colombia,Colombia,COL,170,Americas,Latin America and the Caribbean,Developing,,,,Upper middle income
+Comoros,Comoros,COM,174,Africa,Sub-Saharan Africa,Developing,x,,x,Lower middle income
+Cook Islands,Cook Islands,COK,184,Oceania,Polynesia,Developing,,,x,Unknown
+Coral Sea Islands,__TERRITORY__,,,,,,,,,Unknown
+Costa Rica,Costa Rica,CRI,188,Americas,Latin America and the Caribbean,Developing,,,,Upper middle income
+Croatia,Croatia,HRV,191,Europe,Southern Europe,Developed,,,,High income
+Cuba,Cuba,CUB,192,Americas,Latin America and the Caribbean,Developing,,,x,Upper middle income
+Curacao,Curaçao,CUW,531,Americas,Latin America and the Caribbean,Developing,,,x,High income
+Cyprus,Cyprus,CYP,196,Asia,Western Asia,Developed,,,,High income
+Czechia,Czechia,CZE,203,Europe,Eastern Europe,Developed,,,,High income
+Democratic Republic of the Congo,Democratic Republic of the Congo,COD,180,Africa,Sub-Saharan Africa,Developing,x,,,Low income
+Denmark,Denmark,DNK,208,Europe,Northern Europe,Developed,,,,High income
+Djibouti,Djibouti,DJI,262,Africa,Sub-Saharan Africa,Developing,x,,,Lower middle income
+Dominica,Dominica,DMA,212,Americas,Latin America and the Caribbean,Developing,,,x,Upper middle income
+Dominican Republic,Dominican Republic,DOM,214,Americas,Latin America and the Caribbean,Developing,,,x,Upper middle income
+Ecuador,Ecuador,ECU,218,Americas,Latin America and the Caribbean,Developing,,,,Upper middle income
+Egypt,Egypt,EGY,818,Africa,Northern Africa,Developing,,,,Lower middle income
+El Salvador,El Salvador,SLV,222,Americas,Latin America and the Caribbean,Developing,,,,Upper middle income
+Equatorial Guinea,Equatorial Guinea,GNQ,226,Africa,Sub-Saharan Africa,Developing,,,,Upper middle income
+Eritrea,Eritrea,ERI,232,Africa,Sub-Saharan Africa,Developing,x,,,Low income
+Estonia,Estonia,EST,233,Europe,Northern Europe,Developed,,,,High income
+Eswatini,Eswatini,SWZ,748,Africa,Sub-Saharan Africa,Developing,,x,,Lower middle income
+Ethiopia,Ethiopia,ETH,231,Africa,Sub-Saharan Africa,Developing,x,x,,Low income
+Europa Island,__TERRITORY__,,,,,,,,,Unknown
+Falkland Islands (Islas Malvinas),Falkland Islands (Malvinas),FLK,238,Americas,Latin America and the Caribbean,Developing,,,,Unknown
+Faroe Islands,Faroe Islands,FRO,234,Europe,Northern Europe,Developed,,,,High income
+Fiji,Fiji,FJI,242,Oceania,Melanesia,Developing,,,x,Upper middle income
+Finland,Finland,FIN,246,Europe,Northern Europe,Developed,,,,High income
+France,France,FRA,250,Europe,Western Europe,Developed,,,,High income
+French Guiana,French Guiana,GUF,254,Americas,Latin America and the Caribbean,Developing,,,,Unknown
+French Polynesia,French Polynesia,PYF,258,Oceania,Polynesia,Developing,,,x,High income
+French Southern and Antarctic Lands,French Southern Territories,ATF,260,Africa,Sub-Saharan Africa,Developing,,,,Unknown
+Gabon,Gabon,GAB,266,Africa,Sub-Saharan Africa,Developing,,,,Upper middle income
+Gambia,Gambia,GMB,270,Africa,Sub-Saharan Africa,Developing,x,,,Low income
+Gaza Strip,State of Palestine,PSE,275,Asia,Western Asia,Developing,,,,Lower middle income
+Georgia,Georgia,GEO,268,Asia,Western Asia,Developing,,,,Upper middle income
+Germany,Germany,DEU,276,Europe,Western Europe,Developed,,,,High income
+Ghana,Ghana,GHA,288,Africa,Sub-Saharan Africa,Developing,,,,Lower middle income
+Gibraltar,Gibraltar,GIB,292,Europe,Southern Europe,Developed,,,,High income
+Glorioso Islands,__TERRITORY__,,,,,,,,,Unknown
+Greece,Greece,GRC,300,Europe,Southern Europe,Developed,,,,High income
+Greenland,Greenland,GRL,304,Americas,Northern America,Developed,,,,High income
+Grenada,Grenada,GRD,308,Americas,Latin America and the Caribbean,Developing,,,x,Upper middle income
+Guadeloupe,Guadeloupe,GLP,312,Americas,Latin America and the Caribbean,Developing,,,,Unknown
+Guam,Guam,GUM,316,Oceania,Micronesia,Developing,,,x,High income
+Guatemala,Guatemala,GTM,320,Americas,Latin America and the Caribbean,Developing,,,,Upper middle income
+Guernsey,Guernsey,GGY,831,Europe,Northern Europe,Developed,,,,Unknown
+Guinea,Guinea,GIN,324,Africa,Sub-Saharan Africa,Developing,x,,,Lower middle income
+Guinea-Bissau,Guinea-Bissau,GNB,624,Africa,Sub-Saharan Africa,Developing,x,,x,Low income
+Guyana,Guyana,GUY,328,Americas,Latin America and the Caribbean,Developing,,,x,High income
+Haiti,Haiti,HTI,332,Americas,Latin America and the Caribbean,Developing,x,,x,Lower middle income
+Heard Island and McDonald Islands,Heard Island and McDonald Islands,HMD,334,Oceania,Australia and New Zealand,Developed,,,,Unknown
+Honduras,Honduras,HND,340,Americas,Latin America and the Caribbean,Developing,,,,Lower middle income
+Hong Kong,"China, Hong Kong Special Administrative Region",,,,,,,,,Unknown
+Howland Island,__TERRITORY__,,,,,,,,,Unknown
+Hungary,Hungary,HUN,348,Europe,Eastern Europe,Developed,,,,High income
+Iceland,Iceland,ISL,352,Europe,Northern Europe,Developed,,,,High income
+India,India,IND,356,Asia,Southern Asia,Developing,,,,Lower middle income
+Indian Ocean,__OCEANS_SEAS__,,,,,,,,,Unknown
+Indonesia,Indonesia,IDN,360,Asia,South-eastern Asia,Developing,,,,Upper middle income
+Iran,Iran (Islamic Republic of),IRN,364,Asia,Southern Asia,Developing,,,,Upper middle income
+Iraq,Iraq,IRQ,368,Asia,Western Asia,Developing,,,,Upper middle income
+Ireland,Ireland,IRL,372,Europe,Northern Europe,Developed,,,,High income
+Isle of Man,Isle of Man,IMN,833,Europe,Northern Europe,Developed,,,,High income
+Israel,Israel,ISR,376,Asia,Western Asia,Developed,,,,High income
+Italy,Italy,ITA,380,Europe,Southern Europe,Developed,,,,High income
+Jamaica,Jamaica,JAM,388,Americas,Latin America and the Caribbean,Developing,,,x,Upper middle income
+Jan Mayen,__TERRITORY__,,,,,,,,,Unknown
+Japan,Japan,JPN,392,Asia,Eastern Asia,Developed,,,,High income
+Jarvis Island,__TERRITORY__,,,,,,,,,Unknown
+Jersey,Jersey,JEY,832,Europe,Northern Europe,Developed,,,,Unknown
+Johnston Atoll,__TERRITORY__,,,,,,,,,Unknown
+Jordan,Jordan,JOR,400,Asia,Western Asia,Developing,,,,Lower middle income
+Juan de Nova Island,__TERRITORY__,,,,,,,,,Unknown
+Kazakhstan,Kazakhstan,KAZ,398,Asia,Central Asia,Developing,,x,,Upper middle income
+Kenya,Kenya,KEN,404,Africa,Sub-Saharan Africa,Developing,,,,Lower middle income
+Kerguelen Archipelago,__TERRITORY__,,,,,,,,,Unknown
+Kingman Reef,__TERRITORY__,,,,,,,,,Unknown
+Kiribati,Kiribati,KIR,296,Oceania,Micronesia,Developing,x,,x,Lower middle income
+Kosovo,Kosovo,,,,,,,,,Unknown
+Kuwait,Kuwait,KWT,414,Asia,Western Asia,Developing,,,,High income
+Kyrgyzstan,Kyrgyzstan,KGZ,417,Asia,Central Asia,Developing,,x,,Lower middle income
+Laos,Lao People's Democratic Republic,LAO,418,Asia,South-eastern Asia,Developing,x,x,,Lower middle income
+Latvia,Latvia,LVA,428,Europe,Northern Europe,Developed,,,,High income
+Lebanon,Lebanon,LBN,422,Asia,Western Asia,Developing,,,,Lower middle income
+Lesotho,Lesotho,LSO,426,Africa,Sub-Saharan Africa,Developing,x,x,,Lower middle income
+Liberia,Liberia,LBR,430,Africa,Sub-Saharan Africa,Developing,x,,,Low income
+Libya,Libya,LBY,434,Africa,Northern Africa,Developing,,,,Upper middle income
+Liechtenstein,Liechtenstein,LIE,438,Europe,Western Europe,Developed,,,,High income
+Line Islands,__TERRITORY__,,,,,,,,,Unknown
+Lithuania,Lithuania,LTU,440,Europe,Northern Europe,Developed,,,,High income
+Luxembourg,Luxembourg,LUX,442,Europe,Western Europe,Developed,,,,High income
+Macau,"China, Macao Special Administrative Region",,,,,,,,,Unknown
+Madagascar,Madagascar,MDG,450,Africa,Sub-Saharan Africa,Developing,x,,,Low income
+Malawi,Malawi,MWI,454,Africa,Sub-Saharan Africa,Developing,x,x,,Low income
+Malaysia,Malaysia,MYS,458,Asia,South-eastern Asia,Developing,,,,Upper middle income
+Maldives,Maldives,MDV,462,Asia,Southern Asia,Developing,,,x,Upper middle income
+Mali,Mali,MLI,466,Africa,Sub-Saharan Africa,Developing,x,x,,Low income
+Malta,Malta,MLT,470,Europe,Southern Europe,Developed,,,,High income
+Marshall Islands,Marshall Islands,MHL,584,Oceania,Micronesia,Developing,,,x,Upper middle income
+Martinique,Martinique,MTQ,474,Americas,Latin America and the Caribbean,Developing,,,,Unknown
+Mauritania,Mauritania,MRT,478,Africa,Sub-Saharan Africa,Developing,x,,,Lower middle income
+Mauritius,Mauritius,MUS,480,Africa,Sub-Saharan Africa,Developing,,,x,Upper middle income
+Mayotte,Mayotte,MYT,175,Africa,Sub-Saharan Africa,Developing,,,,Unknown
+Mediterranean Sea,__OCEANS_SEAS__,,,,,,,,,Unknown
+Mexico,Mexico,MEX,484,Americas,Latin America and the Caribbean,Developing,,,,Upper middle income
+"Micronesia, Federated States of",Micronesia (Federated States of),FSM,583,Oceania,Micronesia,Developing,,,x,Lower middle income
+Midway Islands,__TERRITORY__,,,,,,,,,Unknown
+Moldova,Republic of Moldova,MDA,498,Europe,Eastern Europe,Developed,,x,,Upper middle income
+Monaco,Monaco,MCO,492,Europe,Western Europe,Developed,,,,High income
+Mongolia,Mongolia,MNG,496,Asia,Eastern Asia,Developing,,x,,Upper middle income
+Montenegro,Montenegro,MNE,499,Europe,Southern Europe,Developed,,,,Upper middle income
+Montserrat,Montserrat,MSR,500,Americas,Latin America and the Caribbean,Developing,,,x,Unknown
+Morocco,Morocco,MAR,504,Africa,Northern Africa,Developing,,,,Lower middle income
+Mozambique,Mozambique,MOZ,508,Africa,Sub-Saharan Africa,Developing,x,,,Low income
+Myanmar,Myanmar,MMR,104,Asia,South-eastern Asia,Developing,x,,,Lower middle income
+Namibia,Namibia,NAM,516,Africa,Sub-Saharan Africa,Developing,,,,Upper middle income
+Nauru,Nauru,NRU,520,Oceania,Micronesia,Developing,,,x,High income
+Navassa Island,__TERRITORY__,,,,,,,,,Unknown
+Nepal,Nepal,NPL,524,Asia,Southern Asia,Developing,x,x,,Lower middle income
+Netherlands,Netherlands,NLD,528,Europe,Western Europe,Developed,,,,High income
+New Caledonia,New Caledonia,NCL,540,Oceania,Melanesia,Developing,,,x,High income
+New Zealand,New Zealand,NZL,554,Oceania,Australia and New Zealand,Developed,,,,High income
+Nicaragua,Nicaragua,NIC,558,Americas,Latin America and the Caribbean,Developing,,,,Lower middle income
+Niger,Niger,NER,562,Africa,Sub-Saharan Africa,Developing,x,x,,Low income
+Nigeria,Nigeria,NGA,566,Africa,Sub-Saharan Africa,Developing,,,,Lower middle income
+Niue,Niue,NIU,570,Oceania,Polynesia,Developing,,,x,Unknown
+Norfolk Island,Norfolk Island,NFK,574,Oceania,Australia and New Zealand,Developed,,,,Unknown
+North Korea,Democratic People's Republic of Korea,PRK,408,Asia,Eastern Asia,Developing,,,,Low income
+North Macedonia,North Macedonia,MKD,807,Europe,Southern Europe,Developed,,x,,Upper middle income
+North Sea,__OCEANS_SEAS__,,,,,,,,,Unknown
+Northern Mariana Islands,Northern Mariana Islands,MNP,580,Oceania,Micronesia,Developing,,,x,High income
+Norway,Norway,NOR,578,Europe,Northern Europe,Developed,,,,High income
+Oman,Oman,OMN,512,Asia,Western Asia,Developing,,,,High income
+Pacific Ocean,__OCEANS_SEAS__,,,,,,,,,Unknown
+Pakistan,Pakistan,PAK,586,Asia,Southern Asia,Developing,,,,Lower middle income
+Palau,Palau,PLW,585,Oceania,Micronesia,Developing,,,x,High income
+Palmyra Atoll,__TERRITORY__,,,,,,,,,Unknown
+Panama,Panama,PAN,591,Americas,Latin America and the Caribbean,Developing,,,,High income
+Papua New Guinea,Papua New Guinea,PNG,598,Oceania,Melanesia,Developing,,,x,Lower middle income
+Paracel Islands,__TERRITORY__,,,,,,,,,Unknown
+Paraguay,Paraguay,PRY,600,Americas,Latin America and the Caribbean,Developing,,x,,Upper middle income
+Peru,Peru,PER,604,Americas,Latin America and the Caribbean,Developing,,,,Upper middle income
+Philippines,Philippines,PHL,608,Asia,South-eastern Asia,Developing,,,,Lower middle income
+Pitcairn Islands,Pitcairn,PCN,612,Oceania,Polynesia,Developing,,,,Unknown
+Poland,Poland,POL,616,Europe,Eastern Europe,Developed,,,,High income
+Portugal,Portugal,PRT,620,Europe,Southern Europe,Developed,,,,High income
+Puerto Rico,Puerto Rico,PRI,630,Americas,Latin America and the Caribbean,Developing,,,x,High income
+Qatar,Qatar,QAT,634,Asia,Western Asia,Developing,,,,High income
+Republic of the Congo,Congo,COG,178,Africa,Sub-Saharan Africa,Developing,,,,Lower middle income
+Reunion,Réunion,REU,638,Africa,Sub-Saharan Africa,Developing,,,,Unknown
+Romania,Romania,ROU,642,Europe,Eastern Europe,Developed,,,,High income
+Ross Sea,__OCEANS_SEAS__,,,,,,,,,Unknown
+Russia,Russian Federation,RUS,643,Europe,Eastern Europe,Developed,,,,High income
+Rwanda,Rwanda,RWA,646,Africa,Sub-Saharan Africa,Developing,x,x,,Low income
+Saint Barthelemy,Saint Barthélemy,BLM,652,Americas,Latin America and the Caribbean,Developing,,,,Unknown
+Saint Helena,Saint Helena,SHN,654,Africa,Sub-Saharan Africa,Developing,,,,Unknown
+Saint Kitts and Nevis,Saint Kitts and Nevis,KNA,659,Americas,Latin America and the Caribbean,Developing,,,x,High income
+Saint Lucia,Saint Lucia,LCA,662,Americas,Latin America and the Caribbean,Developing,,,x,Upper middle income
+Saint Martin,Saint Martin (French Part),MAF,663,Americas,Latin America and the Caribbean,Developing,,,,High income
+Saint Pierre and Miquelon,Saint Pierre and Miquelon,SPM,666,Americas,Northern America,Developed,,,,Unknown
+Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,VCT,670,Americas,Latin America and the Caribbean,Developing,,,x,Upper middle income
+Samoa,Samoa,WSM,882,Oceania,Polynesia,Developing,,,x,Lower middle income
+San Marino,San Marino,SMR,674,Europe,Southern Europe,Developed,,,,High income
+Sao Tome and Principe,Sao Tome and Principe,STP,678,Africa,Sub-Saharan Africa,Developing,x,,x,Lower middle income
+Saudi Arabia,Saudi Arabia,SAU,682,Asia,Western Asia,Developing,,,,High income
+Senegal,Senegal,SEN,686,Africa,Sub-Saharan Africa,Developing,x,,,Lower middle income
+Serbia,Serbia,SRB,688,Europe,Southern Europe,Developed,,,,Upper middle income
+Seychelles,Seychelles,SYC,690,Africa,Sub-Saharan Africa,Developing,,,x,High income
+Sierra Leone,Sierra Leone,SLE,694,Africa,Sub-Saharan Africa,Developing,x,,,Low income
+Singapore,Singapore,SGP,702,Asia,South-eastern Asia,Developing,,,x,High income
+Sint Maarten,Sint Maarten (Dutch part),SXM,534,Americas,Latin America and the Caribbean,Developing,,,x,High income
+Slovakia,Slovakia,SVK,703,Europe,Eastern Europe,Developed,,,,High income
+Slovenia,Slovenia,SVN,705,Europe,Southern Europe,Developed,,,,High income
+Solomon Islands,Solomon Islands,SLB,90,Oceania,Melanesia,Developing,x,,x,Lower middle income
+Somalia,Somalia,SOM,706,Africa,Sub-Saharan Africa,Developing,x,,,Low income
+South Africa,South Africa,ZAF,710,Africa,Sub-Saharan Africa,Developing,,,,Upper middle income
+South Georgia and the South Sandwich Islands,South Georgia and the South Sandwich Islands,SGS,239,Americas,Latin America and the Caribbean,Developing,,,,Unknown
+South Korea,Republic of Korea,KOR,410,Asia,Eastern Asia,Developing,,,,High income
+South Sudan,South Sudan,SSD,728,Africa,Sub-Saharan Africa,Developing,x,x,,Low income
+Southern Ocean,__OCEANS_SEAS__,,,,,,,,,Unknown
+Spain,Spain,ESP,724,Europe,Southern Europe,Developed,,,,High income
+Spratly Islands,__TERRITORY__,,,,,,,,,Unknown
+Sri Lanka,Sri Lanka,LKA,144,Asia,Southern Asia,Developing,,,,Lower middle income
+State of Palestine,State of Palestine,PSE,275,Asia,Western Asia,Developing,,,,Lower middle income
+Sudan,Sudan,SDN,729,Africa,Northern Africa,Developing,x,,,Low income
+Suriname,Suriname,SUR,740,Americas,Latin America and the Caribbean,Developing,,,x,Upper middle income
+Svalbard,Svalbard and Jan Mayen Islands,SJM,744,Europe,Northern Europe,Developed,,,,Unknown
+Sweden,Sweden,SWE,752,Europe,Northern Europe,Developed,,,,High income
+Switzerland,Switzerland,CHE,756,Europe,Western Europe,Developed,,,,High income
+Syria,Syrian Arab Republic,SYR,760,Asia,Western Asia,Developing,,,,Low income
+Taiwan,Taiwan,,,,,,,,,Unknown
+Tajikistan,Tajikistan,TJK,762,Asia,Central Asia,Developing,,x,,Lower middle income
+Tanzania,United Republic of Tanzania,TZA,834,Africa,Sub-Saharan Africa,Developing,x,,,Lower middle income
+Tasman Sea,__OCEANS_SEAS__,,,,,,,,,Unknown
+Thailand,Thailand,THA,764,Asia,South-eastern Asia,Developing,,,,Upper middle income
+Timor-Leste,Timor-Leste,TLS,626,Asia,South-eastern Asia,Developing,x,,x,Lower middle income
+Togo,Togo,TGO,768,Africa,Sub-Saharan Africa,Developing,x,,,Low income
+Tokelau,Tokelau,TKL,772,Oceania,Polynesia,Developing,,,,Unknown
+Tonga,Tonga,TON,776,Oceania,Polynesia,Developing,,,x,Upper middle income
+Trinidad and Tobago,Trinidad and Tobago,TTO,780,Americas,Latin America and the Caribbean,Developing,,,x,High income
+Tromelin Island,__TERRITORY__,,,,,,,,,Unknown
+Tunisia,Tunisia,TUN,788,Africa,Northern Africa,Developing,,,,Lower middle income
+Turkey,Turkey,TUR,792,Asia,Western Asia,Developing,,,,Upper middle income
+Turkmenistan,Turkmenistan,TKM,795,Asia,Central Asia,Developing,,x,,Upper middle income
+Turks and Caicos Islands,Turks and Caicos Islands,TCA,796,Americas,Latin America and the Caribbean,Developing,,,,High income
+Tuvalu,Tuvalu,TUV,798,Oceania,Polynesia,Developing,x,,x,Upper middle income
+Uganda,Uganda,UGA,800,Africa,Sub-Saharan Africa,Developing,x,x,,Low income
+Ukraine,Ukraine,UKR,804,Europe,Eastern Europe,Developed,,,,Upper middle income
+United Arab Emirates,United Arab Emirates,ARE,784,Asia,Western Asia,Developing,,,,High income
+United Kingdom,United Kingdom of Great Britain and Northern Ireland,GBR,826,Europe,Northern Europe,Developed,,,,High income
+Uruguay,Uruguay,URY,858,Americas,Latin America and the Caribbean,Developing,,,,High income
+USA,United States of America,USA,840,Americas,Northern America,Developed,,,,High income
+Uzbekistan,Uzbekistan,UZB,860,Asia,Central Asia,Developing,,x,,Lower middle income
+Vanuatu,Vanuatu,VUT,548,Oceania,Melanesia,Developing,x,,x,Lower middle income
+Venezuela,Venezuela (Bolivarian Republic of),VEN,862,Americas,Latin America and the Caribbean,Developing,,,,Unknown
+Viet Nam,Viet Nam,VNM,704,Asia,South-eastern Asia,Developing,,,,Lower middle income
+Virgin Islands,United States Virgin Islands,VIR,850,Americas,Latin America and the Caribbean,Developing,,,x,High income
+Wake Island,__TERRITORY__,,,,,,,,,Unknown
+Wallis and Futuna,Wallis and Futuna Islands,WLF,876,Oceania,Polynesia,Developing,,,,Unknown
+West Bank,State of Palestine,PSE,275,Asia,Western Asia,Developing,,,,Lower middle income
+Western Sahara,Western Sahara,ESH,732,Africa,Northern Africa,Developing,,,,Unknown
+Yemen,Yemen,YEM,887,Asia,Western Asia,Developing,x,,,Low income
+Zambia,Zambia,ZMB,894,Africa,Sub-Saharan Africa,Developing,x,x,,Lower middle income
+Zimbabwe,Zimbabwe,ZWE,716,Africa,Sub-Saharan Africa,Developing,,x,,Lower middle income
+Belgian Congo,Democratic Republic of the Congo,COD,180,Africa,Sub-Saharan Africa,Developing,x,,,Low income
+British Guiana,Guyana,GUY,328,Americas,Latin America and the Caribbean,Developing,,,x,High income
+Burma,Myanmar,MMR,104,Asia,South-eastern Asia,Developing,x,,,Lower middle income
+Czechoslovakia,Czechia,CZE,203,Europe,Eastern Europe,Developed,,,,High income
+Czech Republic,Czechia,CZE,203,Europe,Eastern Europe,Developed,,,,High income
+East Timor,Timor-Leste,TLS,626,Asia,South-eastern Asia,Developing,x,,x,Lower middle income
+Korea,Republic of Korea,KOR,410,Asia,Eastern Asia,Developing,,,,High income
+Macedonia,North Macedonia,MKD,807,Europe,Southern Europe,Developed,,x,,Upper middle income
+Micronesia,Micronesia (Federated States of),FSM,583,Oceania,Micronesia,Developing,,,x,Lower middle income
+Netherlands Antilles,Curaçao,CUW,531,Americas,Latin America and the Caribbean,Developing,,,x,High income
+Serbia and Montenegro,__HISTORICAL__,,,,,,,,,Unknown
+Siam,Thailand,THA,764,Asia,South-eastern Asia,Developing,,,,Upper middle income
+Swaziland,Eswatini,SWZ,748,Africa,Sub-Saharan Africa,Developing,,x,,Lower middle income
+The former Yugoslav Republic of Macedonia,North Macedonia,MKD,807,Europe,Southern Europe,Developed,,x,,Upper middle income
+USSR,__HISTORICAL__,,,,,,,,,Unknown
+Yugoslavia,__HISTORICAL__,,,,,,,,,Unknown
+Zaire,Democratic Republic of the Congo,COD,180,Africa,Sub-Saharan Africa,Developing,x,,,Low income

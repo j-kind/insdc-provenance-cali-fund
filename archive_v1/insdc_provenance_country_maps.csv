@@ -1,0 +1,247 @@
+country,iso3,m49,region,sub_region,dev_status,ldc,lldc,sids,ena_all,ena_post2023,ena_env,ncbi_all,ncbi_post2023,ncbi_env,insdc_names
+United States of America,USA,840,Americas,Northern America,Developed,,,,8630795,1989524,4999,283885,34775,49681,USA
+United Kingdom of Great Britain and Northern Ireland,GBR,826,Europe,Northern Europe,Developed,,,,3746618,224244,51680,45236,10906,0,United Kingdom
+China,CHN,156,Asia,Eastern Asia,Developing,,,,3563480,1763973,2456,153742,60039,393,China
+Germany,DEU,276,Europe,Western Europe,Developed,,,,1181175,124197,9719,47226,11851,55,Germany
+Denmark,DNK,208,Europe,Northern Europe,Developed,,,,715931,63580,2003,14635,1956,206,Denmark
+Canada,CAN,124,Americas,Northern America,Developed,,,,583136,231073,5117,22400,10461,0,Canada
+Australia,AUS,36,Oceania,Australia and New Zealand,Developed,,,,508400,173392,1311,10085,3740,0,Australia
+Japan,JPN,392,Asia,Eastern Asia,Developed,,,,458330,211789,325,16406,6538,46,Japan
+__OCEANS_SEAS__,,,,,,,,,456769,98870,5260,7,0,0,Arctic Ocean; Atlantic Ocean; Baltic Sea; Indian Ocean; Mediterranean Sea; North Sea; Pacific Ocean; Ross Sea; Southern Ocean; Tasman Sea
+France,FRA,250,Europe,Western Europe,Developed,,,,456076,89048,10901,12162,5165,617,France
+Spain,ESP,724,Europe,Southern Europe,Developed,,,,408251,79974,2668,15845,5486,101,Spain
+Switzerland,CHE,756,Europe,Western Europe,Developed,,,,369283,55101,1685,8747,2916,0,Switzerland
+Republic of Korea,KOR,410,Asia,Eastern Asia,Developing,,,,321395,154147,112,46948,16593,824,Korea; Republic of Korea; South Korea
+Netherlands,NLD,528,Europe,Western Europe,Developed,,,,287137,52877,1205,13146,4315,6,Netherlands
+Finland,FIN,246,Europe,Northern Europe,Developed,,,,273778,23027,454,7957,3483,0,Finland
+Italy,ITA,380,Europe,Southern Europe,Developed,,,,269511,71369,3823,14859,4335,278,Italy
+Sweden,SWE,752,Europe,Northern Europe,Developed,,,,241148,42633,1013,22935,5063,0,Sweden
+Brazil,BRA,76,Americas,Latin America and the Caribbean,Developing,,,,221939,60996,323,5872,1790,0,Brazil
+India,IND,356,Asia,Southern Asia,Developing,,,,210028,73505,478,10997,4086,0,India
+Ireland,IRL,372,Europe,Northern Europe,Developed,,,,209142,54843,119,2577,348,0,Ireland
+Mexico,MEX,484,Americas,Latin America and the Caribbean,Developing,,,,195536,58186,1053,8909,443,0,Mexico
+Norway,NOR,578,Europe,Northern Europe,Developed,,,,154298,26991,3534,3937,629,99,Norway
+South Africa,ZAF,710,Africa,Sub-Saharan Africa,Developing,,,,150175,35438,87,3298,582,0,South Africa
+Jersey,JEY,832,Europe,Northern Europe,Developed,,,,145175,20166,0,587,314,0,Jersey
+United Republic of Tanzania,TZA,834,Africa,Sub-Saharan Africa,Developing,x,,,141929,16356,63,504,72,0,Tanzania
+New Zealand,NZL,554,Oceania,Australia and New Zealand,Developed,,,,135504,44323,1626,894,378,0,New Zealand
+Georgia,GEO,268,Asia,Western Asia,Developing,,,,131890,25006,49,3980,1460,2,Georgia
+Austria,AUT,40,Europe,Western Europe,Developed,,,,125305,23505,261,6447,2063,0,Austria
+Portugal,PRT,620,Europe,Southern Europe,Developed,,,,120495,15187,3837,696,121,0,Portugal
+Czechia,CZE,203,Europe,Eastern Europe,Developed,,,,112980,20356,340,2621,1069,0,Czech Republic; Czechia; Czechoslovakia
+Belgium,BEL,56,Europe,Western Europe,Developed,,,,112185,34330,102,4831,1839,0,Belgium
+"China, Hong Kong Special Administrative Region",,,,,,,,,106026,41865,143,2401,561,0,Hong Kong
+Kenya,KEN,404,Africa,Sub-Saharan Africa,Developing,,,,99761,14900,534,916,281,0,Kenya
+Israel,ISR,376,Asia,Western Asia,Developed,,,,96346,27228,44,4533,466,0,Israel
+Russian Federation,RUS,643,Europe,Eastern Europe,Developed,,,,90542,30576,558,4907,1792,0,Russia; USSR
+Singapore,SGP,702,Asia,South-eastern Asia,Developing,,,x,89012,22824,49,4899,1970,0,Singapore
+Poland,POL,616,Europe,Eastern Europe,Developed,,,,79010,26764,81,2892,838,0,Poland
+Thailand,THA,764,Asia,South-eastern Asia,Developing,,,,77351,24823,230,3156,802,0,Siam; Thailand
+Bangladesh,BGD,50,Asia,Southern Asia,Developing,x,,,76388,15096,42,683,500,0,Bangladesh
+Madagascar,MDG,450,Africa,Sub-Saharan Africa,Developing,x,,,66917,8773,21,1001,9,0,Madagascar
+Taiwan,,,,,,,,,65638,29489,13,8298,1162,0,Taiwan
+Uganda,UGA,800,Africa,Sub-Saharan Africa,Developing,x,x,,61509,22480,21,6746,211,0,Uganda
+Estonia,EST,233,Europe,Northern Europe,Developed,,,,61445,7422,150,1293,198,0,Estonia
+Iceland,ISL,352,Europe,Northern Europe,Developed,,,,61321,5570,11,222,112,0,Iceland
+Chile,CHL,152,Americas,Latin America and the Caribbean,Developing,,,,60528,21645,174,1399,370,0,Chile
+Antarctica,ATA,10,,,,,,,59860,26707,557,154,64,0,Antarctica
+Slovakia,SVK,703,Europe,Eastern Europe,Developed,,,,56560,5241,10,1753,1488,0,Slovakia
+Ghana,GHA,288,Africa,Sub-Saharan Africa,Developing,,,,54496,6365,13,125,4,0,Ghana
+Peru,PER,604,Americas,Latin America and the Caribbean,Developing,,,,51753,16896,14,925,110,0,Peru
+Greece,GRC,300,Europe,Southern Europe,Developed,,,,51523,8833,191,798,229,0,Greece
+Ethiopia,ETH,231,Africa,Sub-Saharan Africa,Developing,x,x,,51017,16997,18,464,127,0,Ethiopia
+Argentina,ARG,32,Americas,Latin America and the Caribbean,Developing,,,,50809,11694,108,558,68,0,Argentina
+Saudi Arabia,SAU,682,Asia,Western Asia,Developing,,,,49588,16143,206,4185,776,4,Saudi Arabia
+Malawi,MWI,454,Africa,Sub-Saharan Africa,Developing,x,x,,49124,6728,15,1075,39,0,Malawi
+Mongolia,MNG,496,Asia,Eastern Asia,Developing,,x,,47886,20181,22,1712,204,0,Mongolia
+Nigeria,NGA,566,Africa,Sub-Saharan Africa,Developing,,,,46283,7978,20,3815,2361,0,Nigeria
+Puerto Rico,PRI,630,Americas,Latin America and the Caribbean,Developing,,,x,45433,15579,1,67,7,0,Puerto Rico
+Ecuador,ECU,218,Americas,Latin America and the Caribbean,Developing,,,,45045,9931,151,164,4,0,Ecuador
+Colombia,COL,170,Americas,Latin America and the Caribbean,Developing,,,,44095,15228,452,1291,406,250,Colombia
+Viet Nam,VNM,704,Asia,South-eastern Asia,Developing,,,,43938,11589,5,9439,1585,0,Viet Nam; Vietnam
+Costa Rica,CRI,188,Americas,Latin America and the Caribbean,Developing,,,,42011,23686,354,0,0,0,Costa Rica
+Malaysia,MYS,458,Asia,South-eastern Asia,Developing,,,,41183,14468,216,750,501,0,Malaysia
+Indonesia,IDN,360,Asia,South-eastern Asia,Developing,,,,38585,14060,238,693,128,0,Indonesia
+Mali,MLI,466,Africa,Sub-Saharan Africa,Developing,x,x,,35728,16765,0,192,172,0,Mali
+Turkey,TUR,792,Asia,Western Asia,Developing,,,,33605,13023,11,2385,1000,0,Turkey
+Panama,PAN,591,Americas,Latin America and the Caribbean,Developing,,,,32067,10931,58,203,203,0,Panama
+Hungary,HUN,348,Europe,Eastern Europe,Developed,,,,29706,7958,133,4474,1132,0,Hungary
+Guinea,GIN,324,Africa,Sub-Saharan Africa,Developing,x,,,29161,3982,5,308,93,0,Guinea
+Congo,COG,178,Africa,Sub-Saharan Africa,Developing,,,,26355,3616,17,543,19,0,Republic of the Congo
+Cambodia,KHM,116,Asia,South-eastern Asia,Developing,x,,,24877,4904,5,866,366,0,Cambodia
+Democratic Republic of the Congo,COD,180,Africa,Sub-Saharan Africa,Developing,x,,,24699,3329,8,554,27,0,Belgian Congo; Democratic Republic of the Congo; Zaire
+Cameroon,CMR,120,Africa,Sub-Saharan Africa,Developing,,,,22972,6096,51,2541,11,0,Cameroon
+Philippines,PHL,608,Asia,South-eastern Asia,Developing,,,,22677,9935,674,447,143,0,Philippines
+Iran (Islamic Republic of),IRN,364,Asia,Southern Asia,Developing,,,,22183,8957,73,929,93,0,Iran
+Burkina Faso,BFA,854,Africa,Sub-Saharan Africa,Developing,x,x,,22123,5373,6,17,17,0,Burkina Faso
+Senegal,SEN,686,Africa,Sub-Saharan Africa,Developing,x,,,22080,4551,8,34,0,0,Senegal
+Papua New Guinea,PNG,598,Oceania,Melanesia,Developing,,,x,22073,2829,5,45,41,0,Papua New Guinea
+Pakistan,PAK,586,Asia,Southern Asia,Developing,,,,21114,6502,243,1208,287,0,Pakistan
+Nepal,NPL,524,Asia,Southern Asia,Developing,x,x,,20123,3277,5,23,3,0,Nepal
+Croatia,HRV,191,Europe,Southern Europe,Developed,,,,19439,2475,22,718,152,0,Croatia
+Slovenia,SVN,705,Europe,Southern Europe,Developed,,,,18921,7369,131,5154,4687,1,Slovenia
+Latvia,LVA,428,Europe,Northern Europe,Developed,,,,18887,1265,139,1156,233,0,Latvia
+Kazakhstan,KAZ,398,Asia,Central Asia,Developing,,x,,17442,6394,2,1940,293,0,Kazakhstan
+Greenland,GRL,304,Americas,Northern America,Developed,,,,17400,5567,39,24,0,0,Greenland
+Romania,ROU,642,Europe,Eastern Europe,Developed,,,,17115,4724,32,536,61,0,Romania
+Mozambique,MOZ,508,Africa,Sub-Saharan Africa,Developing,x,,,16792,4896,3,65,26,0,Mozambique
+French Polynesia,PYF,258,Oceania,Polynesia,Developing,,,x,16387,5797,670,1,1,0,French Polynesia
+Bulgaria,BGR,100,Europe,Eastern Europe,Developed,,,,14912,3846,59,1637,173,0,Bulgaria
+Gambia,GMB,270,Africa,Sub-Saharan Africa,Developing,x,,,14806,2542,1,514,9,0,Gambia
+Svalbard and Jan Mayen Islands,SJM,744,Europe,Northern Europe,Developed,,,,14506,5591,23,0,0,0,Svalbard
+Cyprus,CYP,196,Asia,Western Asia,Developed,,,,14244,3286,0,102,26,0,Cyprus
+Fiji,FJI,242,Oceania,Melanesia,Developing,,,x,12083,6905,0,94,33,0,Fiji
+French Guiana,GUF,254,Americas,Latin America and the Caribbean,Developing,,,,12046,2605,142,96,0,0,French Guiana
+Ukraine,UKR,804,Europe,Eastern Europe,Developed,,,,12037,5312,26,1981,1031,0,Ukraine
+Zambia,ZMB,894,Africa,Sub-Saharan Africa,Developing,x,x,,11445,4770,10,271,166,0,Zambia
+Morocco,MAR,504,Africa,Northern Africa,Developing,,,,11137,4705,4,131,24,0,Morocco
+Lao People's Democratic Republic,LAO,418,Asia,South-eastern Asia,Developing,x,x,,10974,3932,0,4,0,0,Laos
+Luxembourg,LUX,442,Europe,Western Europe,Developed,,,,10936,841,174,365,232,0,Luxembourg
+Haiti,HTI,332,Americas,Latin America and the Caribbean,Developing,x,,x,10450,1114,0,132,98,0,Haiti
+Venezuela (Bolivarian Republic of),VEN,862,Americas,Latin America and the Caribbean,Developing,,,,10156,1650,0,1,1,0,Venezuela
+Egypt,EGY,818,Africa,Northern Africa,Developing,,,,10154,3581,3,570,174,0,Egypt
+United Arab Emirates,ARE,784,Asia,Western Asia,Developing,,,,9805,3583,6,1466,312,0,United Arab Emirates
+Lebanon,LBN,422,Asia,Western Asia,Developing,,,,9578,2216,7,318,71,0,Lebanon
+Zimbabwe,ZWE,716,Africa,Sub-Saharan Africa,Developing,,x,,8637,1563,0,42,0,0,Zimbabwe
+Bolivia (Plurinational State of),BOL,68,Americas,Latin America and the Caribbean,Developing,,x,,8561,3642,1,115,15,0,Bolivia
+Tunisia,TUN,788,Africa,Northern Africa,Developing,,,,8407,3137,12,299,69,0,Tunisia
+Guadeloupe,GLP,312,Americas,Latin America and the Caribbean,Developing,,,,8394,3454,26,80,0,0,Guadeloupe
+Botswana,BWA,72,Africa,Sub-Saharan Africa,Developing,,x,,8110,2495,8,2669,224,0,Botswana
+Uruguay,URY,858,Americas,Latin America and the Caribbean,Developing,,,,7974,2340,3,49,29,0,Uruguay
+Belize,BLZ,84,Americas,Latin America and the Caribbean,Developing,,,x,7675,1385,24,0,0,0,Belize
+Lithuania,LTU,440,Europe,Northern Europe,Developed,,,,7612,1630,134,2249,209,0,Lithuania
+Réunion,REU,638,Africa,Sub-Saharan Africa,Developing,,,,7581,1911,1,0,0,0,Reunion
+Benin,BEN,204,Africa,Sub-Saharan Africa,Developing,x,,,7299,894,2,10,10,0,Benin
+Guyana,GUY,328,Americas,Latin America and the Caribbean,Developing,,,x,7192,5542,0,0,0,0,British Guiana; Guyana
+Namibia,NAM,516,Africa,Sub-Saharan Africa,Developing,,,,6925,1890,1,184,150,151,Namibia
+Rwanda,RWA,646,Africa,Sub-Saharan Africa,Developing,x,x,,6855,1891,151,463,259,0,Rwanda
+Myanmar,MMR,104,Asia,South-eastern Asia,Developing,x,,,6764,1510,0,90,0,0,Burma; Myanmar
+Qatar,QAT,634,Asia,Western Asia,Developing,,,,6760,1161,3,542,88,0,Qatar
+New Caledonia,NCL,540,Oceania,Melanesia,Developing,,,x,6703,3015,477,0,0,0,New Caledonia
+Sri Lanka,LKA,144,Asia,Southern Asia,Developing,,,,6480,2009,6,295,17,0,Sri Lanka
+Central African Republic,CAF,140,Africa,Sub-Saharan Africa,Developing,x,x,,6415,280,189,287,4,0,Central African Republic
+Curaçao,CUW,531,Americas,Latin America and the Caribbean,Developing,,,x,6288,3008,2,0,0,0,Curacao; Netherlands Antilles
+Serbia,SRB,688,Europe,Southern Europe,Developed,,,,6222,1702,8,622,201,0,Serbia; Serbia and Montenegro; Yugoslavia
+Nicaragua,NIC,558,Americas,Latin America and the Caribbean,Developing,,,,6216,474,5,848,0,0,Nicaragua
+Republic of Moldova,MDA,498,Europe,Eastern Europe,Developed,,x,,6139,1290,3,31,31,0,Moldova
+__TERRITORY__,,,,,,,,,6029,1884,0,0,0,0,Baker Island; Bassas da India; Bouvet Island; Clipperton Island; Coral Sea Islands; Europa Island; Glorioso Islands; Howland Island; Jan Mayen; Johnston Atoll; Juan de Nova Island; Kerguelen Archipelago; Kingman Reef; Line Islands; Midway Islands; Navassa Island; Palmyra Atoll; Paracel Islands; Spratly Islands; Tromelin Island; Wake Island
+United States Virgin Islands,VIR,850,Americas,Latin America and the Caribbean,Developing,,,x,6007,1893,0,0,0,0,Virgin Islands
+Seychelles,SYC,690,Africa,Sub-Saharan Africa,Developing,,,x,5657,756,0,0,0,0,Seychelles
+Jordan,JOR,400,Asia,Western Asia,Developing,,,,5481,2158,0,1491,104,0,Jordan
+Gabon,GAB,266,Africa,Sub-Saharan Africa,Developing,,,,5367,1659,0,6,6,0,Gabon
+Afghanistan,AFG,4,Asia,Southern Asia,Developing,x,x,,5130,1215,0,48,42,0,Afghanistan
+Guatemala,GTM,320,Americas,Latin America and the Caribbean,Developing,,,,5001,3147,3,48,48,0,Guatemala
+Honduras,HND,340,Americas,Latin America and the Caribbean,Developing,,,,4998,789,0,221,214,0,Honduras
+Oman,OMN,512,Asia,Western Asia,Developing,,,,4960,2098,0,6,4,0,Oman
+Mauritius,MUS,480,Africa,Sub-Saharan Africa,Developing,,,x,4897,1220,7,0,0,0,Mauritius
+Guam,GUM,316,Oceania,Micronesia,Developing,,,x,4703,1581,3,0,0,0,Guam
+Algeria,DZA,12,Africa,Northern Africa,Developing,,,,4547,1889,13,39,22,0,Algeria
+Northern Mariana Islands,MNP,580,Oceania,Micronesia,Developing,,,x,4249,638,0,0,0,0,Northern Mariana Islands
+Niger,NER,562,Africa,Sub-Saharan Africa,Developing,x,x,,4196,1068,0,6,6,0,Niger
+Cuba,CUB,192,Americas,Latin America and the Caribbean,Developing,,,x,4181,1225,9,135,0,0,Cuba
+Sudan,SDN,729,Africa,Northern Africa,Developing,x,,,3950,651,0,82,65,0,Sudan
+Sierra Leone,SLE,694,Africa,Sub-Saharan Africa,Developing,x,,,3878,895,0,23,13,0,Sierra Leone
+Trinidad and Tobago,TTO,780,Americas,Latin America and the Caribbean,Developing,,,x,3498,878,1,15,0,0,Trinidad and Tobago
+Bermuda,BMU,60,Americas,Northern America,Developed,,,,3351,919,0,0,0,0,Bermuda
+Jamaica,JAM,388,Americas,Latin America and the Caribbean,Developing,,,x,3247,2514,0,7,0,0,Jamaica
+Dominican Republic,DOM,214,Americas,Latin America and the Caribbean,Developing,,,x,3135,1118,0,8,0,0,Dominican Republic
+Iraq,IRQ,368,Asia,Western Asia,Developing,,,,3050,905,1,135,37,0,Iraq
+Angola,AGO,24,Africa,Sub-Saharan Africa,Developing,x,,,3047,229,0,0,0,0,Angola
+Cabo Verde,CPV,132,Africa,Sub-Saharan Africa,Developing,,,x,2847,909,0,0,0,0,Cape Verde
+Kuwait,KWT,414,Asia,Western Asia,Developing,,,,2750,1093,2,1250,1106,0,Kuwait
+Bahamas,BHS,44,Americas,Latin America and the Caribbean,Developing,,,x,2699,277,0,5,0,0,Bahamas
+Vanuatu,VUT,548,Oceania,Melanesia,Developing,x,,x,2656,243,0,19,0,0,Vanuatu
+Guinea-Bissau,GNB,624,Africa,Sub-Saharan Africa,Developing,x,,x,2575,53,0,0,0,0,Guinea-Bissau
+Samoa,WSM,882,Oceania,Polynesia,Developing,,,x,2574,465,0,1,0,0,Samoa
+Montenegro,MNE,499,Europe,Southern Europe,Developed,,,,2565,421,80,18,2,0,Montenegro
+__MULTINATIONAL__,,,,,,,,,2492,921,0,0,0,0,Borneo
+Belarus,BLR,112,Europe,Eastern Europe,Developed,,,,2422,762,0,0,0,0,Belarus
+Syrian Arab Republic,SYR,760,Asia,Western Asia,Developing,,,,2396,850,0,16,2,0,Syria
+Tonga,TON,776,Oceania,Polynesia,Developing,,,x,2393,560,8,3,0,0,Tonga
+Kiribati,KIR,296,Oceania,Micronesia,Developing,x,,x,2301,1632,0,3,3,0,Kiribati
+El Salvador,SLV,222,Americas,Latin America and the Caribbean,Developing,,,,2298,230,0,0,0,0,El Salvador
+Mayotte,MYT,175,Africa,Sub-Saharan Africa,Developing,,,,2257,981,0,0,0,0,Mayotte
+Micronesia (Federated States of),FSM,583,Oceania,Micronesia,Developing,,,x,2078,666,0,0,0,0,"Micronesia; Micronesia, Federated States of"
+Paraguay,PRY,600,Americas,Latin America and the Caribbean,Developing,,x,,2075,499,5,1,0,0,Paraguay
+Palau,PLW,585,Oceania,Micronesia,Developing,,,x,2071,832,0,21,0,0,Palau
+Cayman Islands,CYM,136,Americas,Latin America and the Caribbean,Developing,,,,2019,451,0,0,0,0,Cayman Islands
+Suriname,SUR,740,Americas,Latin America and the Caribbean,Developing,,,x,1996,590,0,0,0,0,Suriname
+Sao Tome and Principe,STP,678,Africa,Sub-Saharan Africa,Developing,x,,x,1960,1017,0,0,0,0,Sao Tome and Principe
+Togo,TGO,768,Africa,Sub-Saharan Africa,Developing,x,,,1936,1004,5,44,6,0,Togo
+Liechtenstein,LIE,438,Europe,Western Europe,Developed,,,,1928,5,0,0,0,0,Liechtenstein
+Kyrgyzstan,KGZ,417,Asia,Central Asia,Developing,,x,,1782,717,0,67,0,0,Kyrgyzstan
+Faroe Islands,FRO,234,Europe,Northern Europe,Developed,,,,1741,855,0,17,0,0,Faroe Islands
+Azerbaijan,AZE,31,Asia,Western Asia,Developing,,x,,1726,683,0,1,0,0,Azerbaijan
+Liberia,LBR,430,Africa,Sub-Saharan Africa,Developing,x,,,1702,400,0,4,4,0,Liberia
+North Macedonia,MKD,807,Europe,Southern Europe,Developed,,x,,1674,517,7,152,0,0,Macedonia; North Macedonia; The former Yugoslav Republic of Macedonia
+South Georgia and the South Sandwich Islands,SGS,239,Americas,Latin America and the Caribbean,Developing,,,,1655,325,6,0,0,0,South Georgia and the South Sandwich Islands
+Uzbekistan,UZB,860,Asia,Central Asia,Developing,,x,,1649,753,0,6,2,0,Uzbekistan
+Bhutan,BTN,64,Asia,Southern Asia,Developing,x,x,,1512,455,0,0,0,0,Bhutan
+Solomon Islands,SLB,90,Oceania,Melanesia,Developing,x,,x,1492,740,8,16,10,0,Solomon Islands
+"China, Macao Special Administrative Region",,,,,,,,,1467,222,0,434,190,0,Macau
+Eritrea,ERI,232,Africa,Sub-Saharan Africa,Developing,x,,,1383,247,0,1,1,0,Eritrea
+Armenia,ARM,51,Asia,Western Asia,Developing,,x,,1372,458,0,259,83,0,Armenia
+Sint Maarten (Dutch part),SXM,534,Americas,Latin America and the Caribbean,Developing,,,x,1314,0,0,0,0,0,Sint Maarten
+Bosnia and Herzegovina,BIH,70,Europe,Southern Europe,Developed,,,,1266,438,4,50,48,0,Bosnia and Herzegovina
+American Samoa,ASM,16,Oceania,Polynesia,Developing,,,x,1215,256,0,1,0,0,American Samoa
+Tajikistan,TJK,762,Asia,Central Asia,Developing,,x,,1195,622,0,2,0,0,Tajikistan
+State of Palestine,PSE,275,Asia,Western Asia,Developing,,,,1106,48,0,457,1,0,Gaza Strip; State of Palestine; West Bank
+Malta,MLT,470,Europe,Southern Europe,Developed,,,,1050,356,14,250,0,0,Malta
+Chad,TCD,148,Africa,Sub-Saharan Africa,Developing,x,x,,1043,287,8,82,38,0,Chad
+Albania,ALB,8,Europe,Southern Europe,Developed,,,,1038,191,5,2,0,0,Albania
+Yemen,YEM,887,Asia,Western Asia,Developing,x,,,988,158,5,51,48,0,Yemen
+Martinique,MTQ,474,Americas,Latin America and the Caribbean,Developing,,,,958,447,38,0,0,0,Martinique
+French Southern Territories,ATF,260,Africa,Sub-Saharan Africa,Developing,,,,941,255,0,0,0,0,French Southern and Antarctic Lands
+Maldives,MDV,462,Asia,Southern Asia,Developing,,,x,870,536,0,0,0,0,Maldives
+Libya,LBY,434,Africa,Northern Africa,Developing,,,,809,143,0,3,0,0,Libya
+Comoros,COM,174,Africa,Sub-Saharan Africa,Developing,x,,x,774,127,0,8,2,0,Comoros
+Burundi,BDI,108,Africa,Sub-Saharan Africa,Developing,x,x,,753,117,0,12,4,0,Burundi
+Turkmenistan,TKM,795,Asia,Central Asia,Developing,,x,,725,219,0,6,0,0,Turkmenistan
+Djibouti,DJI,262,Africa,Sub-Saharan Africa,Developing,x,,,715,74,0,0,0,0,Djibouti
+Eswatini,SWZ,748,Africa,Sub-Saharan Africa,Developing,,x,,648,158,0,0,0,0,Eswatini; Swaziland
+Democratic People's Republic of Korea,PRK,408,Asia,Eastern Asia,Developing,,,,636,53,0,0,0,0,North Korea
+Equatorial Guinea,GNQ,226,Africa,Sub-Saharan Africa,Developing,,,,627,229,0,0,0,0,Equatorial Guinea
+Wallis and Futuna Islands,WLF,876,Oceania,Polynesia,Developing,,,,600,146,0,0,0,0,Wallis and Futuna
+Barbados,BRB,52,Americas,Latin America and the Caribbean,Developing,,,x,574,121,8,443,3,0,Barbados
+Brunei Darussalam,BRN,96,Asia,South-eastern Asia,Developing,,,,558,131,0,2,0,0,Brunei
+Mauritania,MRT,478,Africa,Sub-Saharan Africa,Developing,x,,,513,164,0,1366,0,0,Mauritania
+Cook Islands,COK,184,Oceania,Polynesia,Developing,,,x,471,193,0,0,0,0,Cook Islands
+Kosovo,,,,,,,,,442,298,1,0,0,0,Kosovo
+Dominica,DMA,212,Americas,Latin America and the Caribbean,Developing,,,x,366,54,0,0,0,0,Dominica
+Saint Kitts and Nevis,KNA,659,Americas,Latin America and the Caribbean,Developing,,,x,337,29,0,0,0,0,Saint Kitts and Nevis
+Grenada,GRD,308,Americas,Latin America and the Caribbean,Developing,,,x,327,25,0,0,0,0,Grenada
+South Sudan,SSD,728,Africa,Sub-Saharan Africa,Developing,x,x,,322,74,0,0,0,0,South Sudan
+Marshall Islands,MHL,584,Oceania,Micronesia,Developing,,,x,302,104,0,0,0,0,Marshall Islands
+Saint Vincent and the Grenadines,VCT,670,Americas,Latin America and the Caribbean,Developing,,,x,283,87,0,0,0,0,Saint Vincent and the Grenadines
+Saint Barthélemy,BLM,652,Americas,Latin America and the Caribbean,Developing,,,,282,280,0,0,0,0,Saint Barthelemy
+Somalia,SOM,706,Africa,Sub-Saharan Africa,Developing,x,,,274,101,0,3,2,0,Somalia
+Christmas Island,CXR,162,Oceania,Australia and New Zealand,Developed,,,,271,151,0,0,0,0,Christmas Island
+Turks and Caicos Islands,TCA,796,Americas,Latin America and the Caribbean,Developing,,,,265,40,0,0,0,0,Turks and Caicos Islands
+Bahrain,BHR,48,Asia,Western Asia,Developing,,,,250,90,0,7,7,0,Bahrain
+Falkland Islands (Malvinas),FLK,238,Americas,Latin America and the Caribbean,Developing,,,,242,112,0,0,0,0,Falkland Islands (Islas Malvinas)
+Monaco,MCO,492,Europe,Western Europe,Developed,,,,234,8,0,0,0,0,Monaco
+Saint Lucia,LCA,662,Americas,Latin America and the Caribbean,Developing,,,x,206,46,48,17,0,0,Saint Lucia
+Timor-Leste,TLS,626,Asia,South-eastern Asia,Developing,x,,x,182,77,0,0,0,0,East Timor; Timor-Leste
+Cocos (Keeling) Islands,CCK,166,Oceania,Australia and New Zealand,Developed,,,,179,0,0,0,0,0,Cocos Islands
+Andorra,AND,20,Europe,Southern Europe,Developed,,,,153,14,0,0,0,0,Andorra
+Saint Helena,SHN,654,Africa,Sub-Saharan Africa,Developing,,,,146,35,0,20,0,0,Saint Helena
+Lesotho,LSO,426,Africa,Sub-Saharan Africa,Developing,x,x,,134,24,0,101,99,101,Lesotho
+British Virgin Islands,VGB,92,Americas,Latin America and the Caribbean,Developing,,,x,132,32,0,0,0,0,British Virgin Islands
+Norfolk Island,NFK,574,Oceania,Australia and New Zealand,Developed,,,,132,33,0,0,0,0,Norfolk Island
+Guernsey,GGY,831,Europe,Northern Europe,Developed,,,,116,43,0,0,0,0,Guernsey
+Antigua and Barbuda,ATG,28,Americas,Latin America and the Caribbean,Developing,,,x,105,65,0,0,0,0,Antigua and Barbuda
+Saint Martin (French Part),MAF,663,Americas,Latin America and the Caribbean,Developing,,,,101,76,0,4,1,0,Saint Martin
+Isle of Man,IMN,833,Europe,Northern Europe,Developed,,,,69,38,0,0,0,0,Isle of Man
+Aruba,ABW,533,Americas,Latin America and the Caribbean,Developing,,,x,67,9,0,6,0,0,Aruba
+Montserrat,MSR,500,Americas,Latin America and the Caribbean,Developing,,,x,53,18,0,0,0,0,Montserrat
+Gibraltar,GIB,292,Europe,Southern Europe,Developed,,,,45,14,0,0,0,0,Gibraltar
+Tokelau,TKL,772,Oceania,Polynesia,Developing,,,,39,34,0,0,0,0,Tokelau
+Western Sahara,ESH,732,Africa,Northern Africa,Developing,,,,34,30,0,2,0,0,Western Sahara
+Heard Island and McDonald Islands,HMD,334,Oceania,Australia and New Zealand,Developed,,,,21,0,0,0,0,0,Heard Island and McDonald Islands
+Anguilla,AIA,660,Americas,Latin America and the Caribbean,Developing,,,x,16,3,0,0,0,0,Anguilla
+San Marino,SMR,674,Europe,Southern Europe,Developed,,,,14,2,0,0,0,0,San Marino
+Tuvalu,TUV,798,Oceania,Polynesia,Developing,x,,x,12,4,0,0,0,0,Tuvalu
+Nauru,NRU,520,Oceania,Micronesia,Developing,,,x,7,6,0,0,0,0,Nauru
+Niue,NIU,570,Oceania,Polynesia,Developing,,,x,4,4,0,0,0,0,Niue
+Pitcairn,PCN,612,Oceania,Polynesia,Developing,,,,4,0,0,0,0,0,Pitcairn Islands
+Saint Pierre and Miquelon,SPM,666,Americas,Northern America,Developed,,,,1,0,0,0,0,0,Saint Pierre and Miquelon
