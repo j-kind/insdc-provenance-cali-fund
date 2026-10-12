@@ -54,11 +54,18 @@ PRE_2018_FILTER = 'first_public<2018-01-01'
 UNDATED_FILTER = 'NOT first_public>=1900-01-01'
 
 # ── Collision exclusions ────────────────────────────────────────────
-# country="X" is an ANY-TOKEN match. These 9 short names absorb other
-# countries' records. We must exclude the longer names to get clean counts.
-# The longer names themselves are clean (no exclusions needed).
+# country="X" is an ANY-TOKEN match. It matches records where X appears
+# as a word-boundary-prefixed token ANYWHERE in the country field, not
+# just as the leading token before the first colon.
+#
+# This causes two types of false matches:
+# 1. Cross-country collisions: "Guinea" matches "Papua New Guinea"
+# 2. Sub-national collisions: "Mexico" matches "USA: New Mexico"
+#
+# Both are fixed by adding AND NOT country="<absorbing name>" exclusions.
 
 COLLISION_EXCLUSIONS = {
+    # Cross-country collisions (shorter name absorbs longer name)
     'Guinea': ['Papua New Guinea', 'Equatorial Guinea', 'Guinea-Bissau'],
     'Korea': ['South Korea', 'North Korea'],
     'Republic of the Congo': ['Democratic Republic of the Congo'],
@@ -68,6 +75,15 @@ COLLISION_EXCLUSIONS = {
     'Micronesia': ['Micronesia, Federated States of'],
     'Samoa': ['American Samoa'],
     'Serbia': ['Serbia and Montenegro'],
+    # Sub-national collisions (country name appears in another country's region)
+    'Georgia': ['USA'],           # US state of Georgia vs country of Georgia
+    'Mongolia': ['China'],        # Inner Mongolia (China) vs country of Mongolia
+    'Mexico': ['USA'],            # New Mexico (US state) vs country of Mexico
+    'Jersey': ['USA'],            # New Jersey (US state) vs Channel Island of Jersey
+    'Ireland': ['United Kingdom'], # Northern Ireland (UK) vs Republic of Ireland
+    'Jamaica': ['USA'],           # Jamaica, Queens (US) vs country of Jamaica
+    'Lebanon': ['USA'],           # Lebanon, NH (US) vs country of Lebanon
+    'Jordan': ['USA'],            # USA: Jordan vs country of Jordan
 }
 
 def build_country_clause(insdc_name):
