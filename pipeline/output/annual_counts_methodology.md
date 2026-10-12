@@ -444,3 +444,115 @@ Three columns: `country`, `period`, `count`. One row per country-period combinat
 | Rows in dataset | 362 |
 | Collision exclusions applied | 17 countries |
 | Non-vocab values included | 32 |
+
+---
+
+## 15. Aggregation onto canonical countries
+
+**Script:** `pipeline/aggregate_countries.py`
+**Output:** `country_annual_counts.csv` + `agg_by_*.csv`
+
+The raw `annual_counts.csv` contains 362 rows — one per unique ENA country-field value. For analysis at the sovereign-country level, these must be aggregated onto canonical countries using a mapping that handles historical names, alternative names, locality names, and non-country values.
+
+### 15.1 Mapping rules
+
+**Historical names → current country (single successor):**
+
+| Raw value | Mapped to |
+|---|---|
+| Belgian Congo | Democratic Republic of the Congo |
+| British Guiana | Guyana |
+| Burma | Myanmar |
+| Czech Republic | Czechia |
+| East Timor | Timor-Leste |
+| Macedonia | North Macedonia |
+| Siam | Thailand |
+| Swaziland | Eswatini |
+| The former Yugoslav Republic of Macedonia | North Macedonia |
+| Zaire | Democratic Republic of the Congo |
+
+**Historical names → `__HISTORICAL__` (multi-successor, cannot cleanly assign):**
+
+| Raw value | Reason |
+|---|---|
+| USSR | → 15 successor states |
+| Yugoslavia | → 6 successor states |
+| Czechoslovakia | → Czechia + Slovakia |
+| Serbia and Montenegro | → Serbia + Montenegro |
+| Netherlands Antilles | → Curaçao + Sint Maarten + Aruba + Bonaire |
+| Korea | → North Korea + South Korea (ambiguous pre-1948 records) |
+
+**Alternative names → canonical country:**
+
+| Raw value(s) | Mapped to |
+|---|---|
+| United States, United States of America, US, U.S., United_States_of_America | USA |
+| UK, Britain, Great Britain, England, Scotland, Wales, Northern Ireland | United Kingdom |
+| Turkiye | Turkey |
+| Vietnam, Viet_Nam | Viet Nam |
+| Syrian Arab Republic | Syria |
+| Cambodge | Cambodia |
+| Sri_Lanka | Sri Lanka |
+| Lao_People's_Democratic_Republic | Laos |
+| The Bahamas | Bahamas |
+| Columbia | Colombia (uncertain: may include British Columbia records not captured by Canada exclusion) |
+
+**Locality names → parent country:**
+
+Records where the country field contains only a locality name (without the country name as a prefix) are mapped to their parent country. These are records that would otherwise be missed by any country query:
+
+| Raw value(s) | Mapped to | Region |
+|---|---|---|
+| Sugadaira, Yakushima, Yakushidake, Iriomote, Teshio, Tomakomai, Sasayama, Yoshidayama, Yona, Nippon | Japan | Japanese localities |
+| Shenzhen, Xi'an, Lijiang, Ailaoshan, Nabanhe | China | Chinese localities |
+| Valencia | Spain | |
+| Mississippi River | USA | |
+| Atacama Desert | Chile | |
+| Helgoland | Germany | |
+| Barro Colorado Island | Panama | |
+
+### 15.2 Non-country values (excluded from country aggregation)
+
+The following values are not sovereign countries and are excluded from the country-level table. They are included in the grand total for context:
+
+- **Placeholders:** missing, not applicable, not collected, unknown, NULL, na, None, not appicable (3,301,083 records)
+- **No country field:** (no country) (7,695,501 records)
+- **Gazetteer IDs:** GAZ (21,319 records)
+- **Oceans and seas:** Atlantic Ocean, Pacific Ocean, Indian Ocean, Arctic Ocean, Southern Ocean, Antarctic, Antarctica, and 25+ named seas (see script for full list)
+- **Shared island:** Borneo (shared by Brunei, Indonesia, Malaysia — cannot assign to one country)
+
+**Total non-country:** 11,554,018 records (38.1% of grand total).
+
+### 15.3 Classification joins
+
+Each canonical country is joined with:
+
+- **UN M.49:** region, sub-region, ISO3 code, developed/developing status, LDC/LLDC/SIDS flags
+- **World Bank:** income group (high, upper middle, lower middle, low income)
+
+Name matching uses an explicit `INSDC_TO_UN` mapping dictionary to handle differences between INSDC vocabulary names and UN M.49 names (e.g., "USA" → "United States of America", "Russia" → "Russian Federation"). Fallback mappings are provided for territories and economies not in the UN M.49 list (Taiwan, Hong Kong, Kosovo, etc.).
+
+### 15.4 Output files
+
+| File | Description |
+|------|-------------|
+| `country_annual_counts.csv` | One row per canonical country with year columns and UN/WB classifications |
+| `agg_by_region.csv` | Aggregation by UN region |
+| `agg_by_subregion.csv` | Aggregation by UN sub-region |
+| `agg_by_dev_status.csv` | Aggregation by developed/developing status |
+| `agg_by_income.csv` | Aggregation by World Bank income group |
+| `agg_by_vulnerability.csv` | Aggregation by LDC/SIDS/LLDC |
+| `country_mapping_audit.csv` | Audit log: every raw value → mapped country → count |
+
+### 15.5 Reconciliation
+
+| Category | Records | % of total |
+|----------|---------|-----------|
+| Country-attributed (sovereign states) | 18,879,030 | 62.0% |
+| Historical (multi-successor) | 20,143 | 0.1% |
+| Non-country (oceans, placeholders, GAZ) | 11,554,018 | 38.0% |
+| **Grand total** | **30,453,191** | **100%** |
+
+### 15.6 Unmapped countries
+
+32 countries remain unmapped (no UN M.49 classification), totaling 52,727 records (0.17% of country total). These are mostly uninhabited territories (Paracel Islands, Spratly Islands, Johnston Atoll, etc.) and a few political entities with ambiguous status (Taiwan, West Bank, Kosovo). See `country_mapping_audit.csv` for the full mapping of all 362 raw values.
