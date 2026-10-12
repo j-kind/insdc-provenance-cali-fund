@@ -49,6 +49,46 @@ unknown,2023,75
 unknown,2024,156
 unknown,2025,101
 unknown,undated,0
+NULL,pre_2018,1616
+NULL,2018,0
+NULL,2019,0
+NULL,2020,3
+NULL,2021,1
+NULL,2022,0
+NULL,2023,1
+NULL,2024,0
+NULL,2025,0
+NULL,undated,0
+na,pre_2018,20
+na,2018,75
+na,2019,15
+na,2020,162
+na,2021,130
+na,2022,148
+na,2023,1369
+na,2024,61
+na,2025,739
+na,undated,0
+None,pre_2018,426
+None,2018,0
+None,2019,0
+None,2020,0
+None,2021,0
+None,2022,0
+None,2023,0
+None,2024,0
+None,2025,12
+None,undated,0
+not appicable,pre_2018,112
+not appicable,2018,0
+not appicable,2019,0
+not appicable,2020,0
+not appicable,2021,0
+not appicable,2022,0
+not appicable,2023,0
+not appicable,2024,0
+not appicable,2025,0
+not appicable,undated,0
 Afghanistan,pre_2018,289
 Afghanistan,2018,1391
 Afghanistan,2019,51
@@ -59,6 +99,16 @@ Afghanistan,2023,101
 Afghanistan,2024,811
 Afghanistan,2025,291
 Afghanistan,undated,1522
+Ailaoshan,pre_2018,0
+Ailaoshan,2018,419
+Ailaoshan,2019,0
+Ailaoshan,2020,0
+Ailaoshan,2021,0
+Ailaoshan,2022,0
+Ailaoshan,2023,0
+Ailaoshan,2024,0
+Ailaoshan,2025,0
+Ailaoshan,undated,0
 Albania,pre_2018,50
 Albania,2018,41
 Albania,2019,31
@@ -209,6 +259,16 @@ Ashmore and Cartier Islands,2023,0
 Ashmore and Cartier Islands,2024,0
 Ashmore and Cartier Islands,2025,0
 Ashmore and Cartier Islands,undated,0
+Atacama Desert,pre_2018,142
+Atacama Desert,2018,0
+Atacama Desert,2019,0
+Atacama Desert,2020,0
+Atacama Desert,2021,0
+Atacama Desert,2022,0
+Atacama Desert,2023,0
+Atacama Desert,2024,0
+Atacama Desert,2025,0
+Atacama Desert,undated,0
 Atlantic Ocean,pre_2018,5124
 Atlantic Ocean,2018,2961
 Atlantic Ocean,2019,3470
@@ -309,6 +369,16 @@ Barbados,2023,2
 Barbados,2024,79
 Barbados,2025,6
 Barbados,undated,75
+Barro Colorado Island,pre_2018,117
+Barro Colorado Island,2018,0
+Barro Colorado Island,2019,0
+Barro Colorado Island,2020,0
+Barro Colorado Island,2021,0
+Barro Colorado Island,2022,0
+Barro Colorado Island,2023,0
+Barro Colorado Island,2024,0
+Barro Colorado Island,2025,0
+Barro Colorado Island,undated,0
 Bassas da India,pre_2018,0
 Bassas da India,2018,0
 Bassas da India,2019,0
@@ -539,6 +609,16 @@ Burundi,2023,78
 Burundi,2024,36
 Burundi,2025,41
 Burundi,undated,79
+Cambodge,pre_2018,0
+Cambodge,2018,0
+Cambodge,2019,97
+Cambodge,2020,0
+Cambodge,2021,0
+Cambodge,2022,0
+Cambodge,2023,0
+Cambodge,2024,0
+Cambodge,2025,0
+Cambodge,undated,0
 Cambodia,pre_2018,436
 Cambodia,2018,353
 Cambodia,2019,247
@@ -1309,6 +1389,16 @@ Heard Island and McDonald Islands,2023,0
 Heard Island and McDonald Islands,2024,0
 Heard Island and McDonald Islands,2025,0
 Heard Island and McDonald Islands,undated,0
+Helgoland,pre_2018,174
+Helgoland,2018,303
+Helgoland,2019,141
+Helgoland,2020,176
+Helgoland,2021,121
+Helgoland,2022,40
+Helgoland,2023,97
+Helgoland,2024,164
+Helgoland,2025,0
+Helgoland,undated,1
 Honduras,pre_2018,78
 Honduras,2018,75
 Honduras,2019,100
@@ -1419,6 +1509,16 @@ Ireland,2023,4170
 Ireland,2024,35186
 Ireland,2025,4765
 Ireland,undated,17833
+Iriomote,pre_2018,0
+Iriomote,2018,704
+Iriomote,2019,0
+Iriomote,2020,0
+Iriomote,2021,0
+Iriomote,2022,0
+Iriomote,2023,0
+Iriomote,2024,0
+Iriomote,2025,0
+Iriomote,undated,0
 Isle of Man,pre_2018,1
 Isle of Man,2018,0
 Isle of Man,2019,8
@@ -1729,6 +1829,16 @@ Liechtenstein,2023,2
 Liechtenstein,2024,0
 Liechtenstein,2025,1
 Liechtenstein,undated,0
+Lijiang,pre_2018,0
+Lijiang,2018,507
+Lijiang,2019,0
+Lijiang,2020,0
+Lijiang,2021,0
+Lijiang,2022,0
+Lijiang,2023,0
+Lijiang,2024,0
+Lijiang,2025,0
+Lijiang,undated,0
 Line Islands,pre_2018,132
 Line Islands,2018,0
 Line Islands,2019,0
@@ -1939,6 +2049,16 @@ Midway Islands,2023,0
 Midway Islands,2024,0
 Midway Islands,2025,23
 Midway Islands,undated,0
+Mississippi River,pre_2018,75
+Mississippi River,2018,0
+Mississippi River,2019,0
+Mississippi River,2020,0
+Mississippi River,2021,1
+Mississippi River,2022,0
+Mississippi River,2023,0
+Mississippi River,2024,0
+Mississippi River,2025,0
+Mississippi River,undated,0
 Moldova,pre_2018,6
 Moldova,2018,17
 Moldova,2019,8
@@ -2019,6 +2139,16 @@ Myanmar,2023,1257
 Myanmar,2024,351
 Myanmar,2025,824
 Myanmar,undated,2075
+Nabanhe,pre_2018,0
+Nabanhe,2018,419
+Nabanhe,2019,0
+Nabanhe,2020,0
+Nabanhe,2021,0
+Nabanhe,2022,0
+Nabanhe,2023,0
+Nabanhe,2024,0
+Nabanhe,2025,0
+Nabanhe,undated,0
 Namibia,pre_2018,563
 Namibia,2018,97
 Namibia,2019,614
@@ -2569,6 +2699,16 @@ Sargasso Sea,2023,28
 Sargasso Sea,2024,11
 Sargasso Sea,2025,3
 Sargasso Sea,undated,0
+Sasayama,pre_2018,0
+Sasayama,2018,491
+Sasayama,2019,0
+Sasayama,2020,0
+Sasayama,2021,0
+Sasayama,2022,0
+Sasayama,2023,0
+Sasayama,2024,0
+Sasayama,2025,0
+Sasayama,undated,0
 Saudi Arabia,pre_2018,4186
 Saudi Arabia,2018,983
 Saudi Arabia,2019,1917
@@ -2629,6 +2769,16 @@ Seychelles,2023,596
 Seychelles,2024,130
 Seychelles,2025,228
 Seychelles,undated,2355
+Shenzhen,pre_2018,0
+Shenzhen,2018,98
+Shenzhen,2019,0
+Shenzhen,2020,137
+Shenzhen,2021,0
+Shenzhen,2022,0
+Shenzhen,2023,0
+Shenzhen,2024,0
+Shenzhen,2025,0
+Shenzhen,undated,0
 Siam,pre_2018,2
 Siam,2018,13
 Siam,2019,0
@@ -2789,6 +2939,16 @@ Sri Lanka,2023,388
 Sri Lanka,2024,510
 Sri Lanka,2025,672
 Sri Lanka,undated,605
+Sri_Lanka,pre_2018,0
+Sri_Lanka,2018,0
+Sri_Lanka,2019,0
+Sri_Lanka,2020,0
+Sri_Lanka,2021,0
+Sri_Lanka,2022,0
+Sri_Lanka,2023,0
+Sri_Lanka,2024,0
+Sri_Lanka,2025,0
+Sri_Lanka,undated,55
 State of Palestine,pre_2018,9
 State of Palestine,2018,14
 State of Palestine,2019,1
@@ -2809,6 +2969,16 @@ Sudan,2023,376
 Sudan,2024,89
 Sudan,2025,233
 Sudan,undated,1075
+Sugadaira,pre_2018,0
+Sugadaira,2018,697
+Sugadaira,2019,0
+Sugadaira,2020,0
+Sugadaira,2021,0
+Sugadaira,2022,0
+Sugadaira,2023,0
+Sugadaira,2024,0
+Sugadaira,2025,0
+Sugadaira,undated,0
 Suriname,pre_2018,29
 Suriname,2018,9
 Suriname,2019,29
@@ -2869,6 +3039,16 @@ Syria,2023,67
 Syria,2024,583
 Syria,2025,192
 Syria,undated,752
+Syrian Arab Republic,pre_2018,0
+Syrian Arab Republic,2018,0
+Syrian Arab Republic,2019,0
+Syrian Arab Republic,2020,8
+Syrian Arab Republic,2021,0
+Syrian Arab Republic,2022,2
+Syrian Arab Republic,2023,7
+Syrian Arab Republic,2024,531
+Syrian Arab Republic,2025,0
+Syrian Arab Republic,undated,0
 Taiwan,pre_2018,2150
 Taiwan,2018,1706
 Taiwan,2019,1403
@@ -2909,6 +3089,16 @@ Tasman Sea,2023,5
 Tasman Sea,2024,232
 Tasman Sea,2025,42
 Tasman Sea,undated,0
+Teshio,pre_2018,0
+Teshio,2018,693
+Teshio,2019,0
+Teshio,2020,0
+Teshio,2021,0
+Teshio,2022,0
+Teshio,2023,0
+Teshio,2024,0
+Teshio,2025,0
+Teshio,undated,0
 Thailand,pre_2018,2958
 Thailand,2018,1224
 Thailand,2019,961
@@ -2969,6 +3159,16 @@ Tokelau,2023,0
 Tokelau,2024,33
 Tokelau,2025,1
 Tokelau,undated,0
+Tomakomai,pre_2018,0
+Tomakomai,2018,606
+Tomakomai,2019,0
+Tomakomai,2020,0
+Tomakomai,2021,0
+Tomakomai,2022,0
+Tomakomai,2023,0
+Tomakomai,2024,0
+Tomakomai,2025,0
+Tomakomai,undated,0
 Tonga,pre_2018,16
 Tonga,2018,302
 Tonga,2019,172
@@ -3069,6 +3269,16 @@ UK,2023,0
 UK,2024,1
 UK,2025,5
 UK,undated,94
+US,pre_2018,25
+US,2018,7
+US,2019,754
+US,2020,111
+US,2021,82
+US,2022,71
+US,2023,281
+US,2024,1
+US,2025,514
+US,undated,24
 USA,pre_2018,381716
 USA,2018,212637
 USA,2019,296920
@@ -3149,6 +3359,16 @@ United States of America,2023,0
 United States of America,2024,0
 United States of America,2025,0
 United States of America,undated,15
+United_States_of_America,pre_2018,0
+United_States_of_America,2018,0
+United_States_of_America,2019,0
+United_States_of_America,2020,0
+United_States_of_America,2021,0
+United_States_of_America,2022,0
+United_States_of_America,2023,0
+United_States_of_America,2024,0
+United_States_of_America,2025,0
+United_States_of_America,undated,50
 Uruguay,pre_2018,101
 Uruguay,2018,75
 Uruguay,2019,196
@@ -3169,6 +3389,16 @@ Uzbekistan,2023,174
 Uzbekistan,2024,486
 Uzbekistan,2025,154
 Uzbekistan,undated,357
+Valencia,pre_2018,113
+Valencia,2018,0
+Valencia,2019,0
+Valencia,2020,0
+Valencia,2021,1
+Valencia,2022,14
+Valencia,2023,1
+Valencia,2024,22
+Valencia,2025,36
+Valencia,undated,0
 Vanuatu,pre_2018,1379
 Vanuatu,2018,9
 Vanuatu,2019,42
@@ -3199,6 +3429,16 @@ Viet Nam,2023,1535
 Viet Nam,2024,2424
 Viet Nam,2025,2229
 Viet Nam,undated,9560
+Viet_Nam,pre_2018,0
+Viet_Nam,2018,0
+Viet_Nam,2019,0
+Viet_Nam,2020,0
+Viet_Nam,2021,0
+Viet_Nam,2022,0
+Viet_Nam,2023,0
+Viet_Nam,2024,0
+Viet_Nam,2025,0
+Viet_Nam,undated,56
 Vietnam,pre_2018,46
 Vietnam,2018,23
 Vietnam,2019,3
@@ -3279,6 +3519,36 @@ Western Sahara,2023,3
 Western Sahara,2024,4
 Western Sahara,2025,24
 Western Sahara,undated,0
+Xi'an,pre_2018,0
+Xi'an,2018,0
+Xi'an,2019,0
+Xi'an,2020,99
+Xi'an,2021,0
+Xi'an,2022,0
+Xi'an,2023,0
+Xi'an,2024,0
+Xi'an,2025,0
+Xi'an,undated,0
+Yakushidake,pre_2018,0
+Yakushidake,2018,737
+Yakushidake,2019,0
+Yakushidake,2020,0
+Yakushidake,2021,0
+Yakushidake,2022,0
+Yakushidake,2023,0
+Yakushidake,2024,0
+Yakushidake,2025,0
+Yakushidake,undated,0
+Yakushima,pre_2018,0
+Yakushima,2018,718
+Yakushima,2019,0
+Yakushima,2020,0
+Yakushima,2021,0
+Yakushima,2022,0
+Yakushima,2023,0
+Yakushima,2024,0
+Yakushima,2025,0
+Yakushima,undated,0
 Yemen,pre_2018,204
 Yemen,2018,22
 Yemen,2019,138
@@ -3289,6 +3559,26 @@ Yemen,2023,24
 Yemen,2024,57
 Yemen,2025,54
 Yemen,undated,179
+Yona,pre_2018,0
+Yona,2018,670
+Yona,2019,0
+Yona,2020,0
+Yona,2021,0
+Yona,2022,0
+Yona,2023,0
+Yona,2024,0
+Yona,2025,0
+Yona,undated,0
+Yoshidayama,pre_2018,0
+Yoshidayama,2018,724
+Yoshidayama,2019,0
+Yoshidayama,2020,0
+Yoshidayama,2021,0
+Yoshidayama,2022,0
+Yoshidayama,2023,0
+Yoshidayama,2024,0
+Yoshidayama,2025,0
+Yoshidayama,undated,0
 Yugoslavia,pre_2018,24
 Yugoslavia,2018,4
 Yugoslavia,2019,11
