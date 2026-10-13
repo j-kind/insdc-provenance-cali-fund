@@ -1,49 +1,61 @@
-# INSDC Provenance Country Maps for the Cali Fund
+# INSDC Provenance Country-Level DSI Counts for the Cali Fund
 
-Country-level maps of non-human digital sequence information (DSI) records with geographic provenance, constructed from the INSDC/ENA sample database to assess whether INSDC provenance data could support a country-level allocation methodology for the Cali Fund.
+Country-level annual counts of non-human digital sequence information (DSI) records with geographic provenance, constructed from the INSDC/ENA sample database to assess whether INSDC provenance data could support a country-level allocation methodology for the CBD Cali Fund.
 
-## Contents
+## Repository structure
 
-- `INSDC_Provenance_Cali_Fund_Assessment.md` — Full written assessment with analysis tables
-- `insdc_provenance_country_maps.csv` — Main table: 244 countries with ENA + NCBI counts and UN classifications
-- `ena_per_country_counts.csv` — Raw ENA per-country counts (all, post-2023, environmental)
-- `insdc_counts_all_legacy.csv` — NCBI BioSample per-country counts (all records)
-- `insdc_counts_post2023.csv` — NCBI BioSample per-country counts (post-2023)
-- `insdc_counts_environmental.csv` — NCBI BioSample per-country counts (environmental)
-- `insdc_provenance_final_analysis.json` — Full analysis in JSON format
+```
+ahteg_allocation/
+├── pipeline/                    End-to-end pipeline (current)
+│   ├── README.md                Pipeline documentation
+│   ├── query_annual_counts.py   Step 1: Query ENA /count for annual per-country counts
+│   ├── aggregate_countries.py   Step 2: Aggregate onto canonical sovereign countries
+│   ├── analyze_disparities.py   Step 3: Analyze global disparities and write report
+│   ├── api_evaluation.md        Subagent evaluation of ENA API approach
+│   ├── annual_evaluation.md     Subagent evaluation of annual query methodology
+│   ├── data/                    Input reference data
+│   └── output/                  All pipeline outputs
+│       ├── annual_counts.csv              Raw per-country-field-value annual counts
+│       ├── annual_counts_methodology.md   Full methodology (15 sections)
+│       ├── country_annual_counts.csv      Per-sovereign-country counts + classifications
+│       └── analysis_report.md             Disparity analysis report
+├── archive_v1/                  Archived v1 pipeline (download-based, superseded)
+└── archive_v2/ (in pipeline/)   Archived v2 pipeline (period buckets, superseded)
+```
 
-### Maps (interactive HTML, open in any browser)
+## Quick start
 
-- `map1_all_legacy_records.html` — All 26.7M non-human DSI records with country provenance (blue-white-red)
-- `map2_post2023_records.html` — 6.8M post-2023 records
-- `map3_environmental_records.html` — 125K environmentally sourced records
-- `map4_post2023_growth_rate.html` — Post-2023 growth rate by country
-- `insdc_provenance_combined_maps.html` — All three maps in one figure
+```bash
+cd pipeline/
+python3 query_annual_counts.py    # ~15 min, queries ENA /count API
+python3 aggregate_countries.py    # < 1 sec, aggregates and classifies
+python3 analyze_disparities.py    # < 1 sec, generates analysis report
+```
 
-### Scripts
-
-- `query_insdc_provenance.py` — NCBI ESearch per-country count queries
-- `final_analysis.py` — Combined ENA + NCBI analysis with UN classification mapping
-- `make_maps.py` — Generate all choropleth maps
-- `make_map1_bwr.py` — Regenerate map 1 with blue-white-red diverging scale
-
-## Methodology
-
-Data was queried from the ENA portal API (primary) and NCBI BioSample ESearch (cross-reference) on 8 October 2026. Non-human records were filtered using `NOT tax_tree(9606)`. Country provenance uses the INSDC controlled vocabulary for `geo_loc_name` (296 valid values). Post-2023 is defined as `first_public >= 2024-01-01`. Environmental samples use the `environmental_sample=true` boolean field.
-
-For countries exceeding ENA's 500k-per-query cap (USA, China, UK, Germany, Denmark, Canada, Australia), counts were obtained by subdividing by year and quarter.
-
-All country names were mapped to UN M.49 classifications for aggregation by region, sub-region, and development status.
+See `pipeline/README.md` for full documentation.
 
 ## Key findings
 
-- 26.7 million non-human ENA samples have country provenance across 244 countries
-- Developed countries hold 71.1% of all records; the USA alone holds 29.3%
-- All 47 LDCs combined hold fewer records (760K) than Denmark alone (716K)
-- Post-2023 developing-country share rose to 40.7%, but this is driven almost entirely by China
-- Environmental sample flags are severely under-populated (0.5% of records)
-- INSDC provenance data should not be used as a direct Cali Fund allocation criterion
+- **30.3 million** non-human DSI records (excl. microbiome + synthetic constructs) in ENA
+- **18.9 million** (62%) attributable to sovereign countries; 38% are oceans, placeholders, or undated
+- **Developed countries hold 70%** of country-attributed records; developing countries 30%
+- **LDCs account for 2.8%**, SIDS 1.2%, LLDCs 1.2% — 47 LDCs combined have fewer records than Canada alone
+- **The developed-country share declined from 74% (2018) to 54% (2025)**, driven by China and other upper-middle-income countries
+- **Europe dominates** with 41% of records, led by the UK (COVID-19 Genomics UK consortium)
+- **Africa has only 3.6%** despite having 59 classified countries
+- **36% of records cannot be attributed to any country**, limiting utility for allocation methodology
+
+## Methodology highlights
+
+- **ENA `/count` endpoint** — exact counts without downloading records
+- **Non-human filter:** `NOT tax_tree(9606) AND NOT host_tax_id=9606 AND NOT tax_tree(32630)`
+- **17 collision exclusions** — prevent false country matches from token matching (e.g., "USA: New Mexico" not counted for Mexico)
+- **32 non-vocab values included** — alternative names, locality names, placeholders
+- **21.5% of records undated** — reported separately, not silently dropped
+- **Reconciliation within -0.5%** of true total (genuine multi-country overcount)
+
+See `pipeline/output/annual_counts_methodology.md` for the complete methodology.
 
 ## License
 
-Data is queried from public databases (ENA, NCBI). Analysis code is provided for reproducibility.
+Data is queried from public databases (ENA). Analysis code is provided for reproducibility.
