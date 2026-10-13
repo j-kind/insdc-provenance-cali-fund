@@ -3,14 +3,14 @@
 **File:** `annual_counts.csv` (wide format) / `annual_counts_long.csv` (long format)
 **Data source:** ENA Portal API (`https://www.ebi.ac.uk/ena/portal/api/`)
 **Query script:** `pipeline/query_annual_counts.py`
-**Run date:** 2026-10-12
-**Total rows:** 362 (9 non-country values + 353 country/locality values)
+**Run date:** 2026-10-13
+**Total rows:** 380 (2 metadata rows + 378 data rows: 296 INSDC vocab + 82 non-vocab values)
 
 ---
 
 ## 1. Purpose
 
-Count non-human digital sequence information (DSI) records in INSDC/ENA per country per year, for use in assessing whether INSDC provenance data could support a country-level allocation methodology for the CBD Cali Fund. Counts are broken down by `first_public` year (2018–2025), plus a pre-2018 bucket, an undated bucket, and an all-time total.
+Count non-human digital sequence information (DSI) records in INSDC/ENA per country per year, for use in assessing whether INSDC provenance data could support a country-level allocation methodology for the CBD Cali Fund. Counts are broken down by `first_public` year (2018–2026), plus a pre-2018 bucket, an undated bucket, and an all-time total.
 
 ---
 
@@ -27,10 +27,10 @@ All counts are obtained from the **ENA Portal API `/count` endpoint**, which ret
 
 ### 2.1 Total query volume
 
-- 296 INSDC vocabulary countries × 11 time slices = 3,256 per-country queries
-- Unattributed bucket × 11 slices = 11 queries
-- Attributed total (reconciliation) × 11 slices = 11 queries
-- Total: ~3,278 queries, completed in ~15 minutes
+- 378 country-field values (296 INSDC vocab + 82 non-vocab) × 12 time slices = 4,536 per-country queries
+- Unattributed bucket × 12 slices = 12 queries
+- Attributed total (reconciliation) × 12 slices = 12 queries
+- Total: 4,560 queries, completed in ~15 minutes with 0 errors
 
 ---
 
@@ -91,7 +91,7 @@ We use `first_public` because it has the best coverage and is stable: when a rec
 
 This means:
 - The `all` column is a **complete census** of non-human records for each country.
-- Each year column (2018, 2019, ..., 2025) is a **partial census** — it only includes records with a `first_public` date falling in that year.
+- Each year column (2018, 2019, ..., 2026) is a **partial census** — it only includes records with a `first_public` date falling in that year. 2026 covers January–October only (partial year).
 - The `undated` column reports records with no `first_public` date, so the gap is visible.
 - **`pre_2018 + sum(years) + undated = all`** for each row. This identity holds exactly.
 
@@ -177,7 +177,7 @@ A country name appears as a token in a sub-national region of a **different** co
 
 | Country | Excludes | False match source | Contamination |
 |---|---|---|---|
-| Georgia | USA | US state of Georgia (`USA: Georgia`) | 67.2% |
+| Georgia | USA, South Georgia and the South Sandwich Islands | US state of Georgia (`USA: Georgia`) + South Georgia | 67.2% |
 | Mongolia | China | Inner Mongolia (`China: Inner Mongolia`) | 68.4% |
 | Mexico | USA | New Mexico (`USA: New Mexico`) | 18.4% |
 | Jersey | USA | New Jersey (`USA: New Jersey`) | 88.9% |
@@ -190,9 +190,19 @@ A country name appears as a token in a sub-national region of a **different** co
 
 These were verified empirically: the actual country field values for Georgia ∩ USA are `USA: Georgia` and `USA:Georgia` (US state), confirmed via `/search`. For Mongolia ∩ China: `China:Mongolia` and `China: Mongolia` (Inner Mongolia region).
 
-### 6.3 Total collision exclusions: 17
+### 6.3 Non-vocab collision exclusions (3 pairs)
 
-All 17 collision exclusions are documented in the `COLLISION_EXCLUSIONS` dictionary in `query_annual_counts.py`. The longer names (e.g., Papua New Guinea, South Korea, DRC) are queried without exclusions — they are already clean because no other vocab name contains them as a token.
+Three non-vocab values have collision exclusions:
+
+| Value | Excludes | Reason |
+|---|---|---|
+| Columbia | Canada | "British Columbia" (Canada) contains "Columbia" as a token |
+| Congo | Republic of the Congo, Democratic Republic of the Congo | Bare "Congo" matches both Congo states |
+| Antarctic | Antarctica | "Antarctic" matches "Antarctica" (which is in the INSDC vocab) |
+
+### 6.4 Total collision exclusions: 20
+
+All 20 collision exclusions are documented in the `COLLISION_EXCLUSIONS` dictionary in `query_annual_counts.py`. The longer names (e.g., Papua New Guinea, South Korea, DRC) are queried without exclusions — they are already clean because no other vocab name contains them as a token.
 
 ---
 
@@ -210,7 +220,9 @@ The INSDC controlled vocabulary for `geo_loc_name` contains 296 entries (soverei
 4. Tested a comprehensive list of alternative country names, non-English names, abbreviations, and misspellings via `/count`
 5. Checked each for overlap with vocab countries to determine if exclusions are needed
 
-### 7.3 Non-vocab values included in the data (32 rows)
+### 7.3 Non-vocab values included in the data (82 values)
+
+The 82 non-vocab values include alternative country names, locality names, placeholders, oceans/seas not in the INSDC vocab, and historical/alternative names. They are queried with the same methodology as vocab countries, including collision exclusions where needed (Columbia→Canada, Congo→RoC+DRC, Antarctic→Antarctica). See `country_mapping_audit.csv` for the complete list.
 
 **Alternative country names (with exclusions for overlap):**
 
@@ -336,7 +348,7 @@ Records with no country field are queried as `NOT country="*"`. This is the **co
 
 ### 10.1 Method
 
-For each time slice, the sum of all 362 rows is compared against the true total (queried independently with no country filter):
+For each time slice, the sum of all 378 rows is compared against the true total (queried independently with no country filter):
 
 ```
 True total = NOT tax_tree(9606) AND NOT host_tax_id=9606 AND NOT tax_tree(32630) AND <date filter>
@@ -346,17 +358,20 @@ True total = NOT tax_tree(9606) AND NOT host_tax_id=9606 AND NOT tax_tree(32630)
 
 | Period | Sum of rows | True total | Gap | Gap % |
 |--------|-----------|-----------|-----|-------|
-| pre_2018 | 2,323,086 | 2,292,343 | -30,743 | -1.3% |
-| 2018 | 1,024,025 | 1,018,516 | -5,509 | -0.5% |
-| 2019 | 1,557,521 | 1,550,781 | -6,740 | -0.4% |
-| 2020 | 2,028,132 | 2,018,011 | -10,121 | -0.5% |
-| 2021 | 3,585,627 | 3,575,941 | -9,686 | -0.3% |
-| 2022 | 3,361,494 | 3,351,839 | -9,655 | -0.3% |
-| 2023 | 3,633,264 | 3,617,007 | -16,257 | -0.4% |
-| 2024 | 2,419,009 | 2,398,672 | -20,337 | -0.8% |
-| 2025 | 2,550,260 | 2,527,321 | -22,939 | -0.9% |
-| undated | 6,519,428 | 6,521,380 | +1,952 | +0.03% |
-| **all** | **30,453,191** | **30,313,212** | **-139,979** | **-0.5%** |
+| pre_2018 | 1,097,645 | 1,017,338 | -80,307 | -7.9% |
+| 2018 | 569,550 | 561,099 | -8,451 | -1.5% |
+| 2019 | 868,373 | 852,591 | -15,782 | -1.9% |
+| 2020 | 1,191,325 | 1,167,384 | -23,941 | -2.1% |
+| 2021 | 2,804,953 | 2,785,321 | -19,632 | -0.7% |
+| 2022 | 2,597,148 | 2,573,569 | -23,579 | -0.9% |
+| 2023 | 2,844,953 | 2,816,060 | -28,893 | -1.0% |
+| 2024 | 2,202,778 | 2,157,139 | -45,639 | -2.1% |
+| 2025 | 2,387,317 | 2,327,183 | -60,134 | -2.6% |
+| 2026 | 1,394,556 | 1,366,704 | -27,852 | -2.0% |
+| undated | 4,994,204 | 4,993,323 | -881 | -0.02% |
+| **all** | **22,952,802** | **22,617,711** | **-335,091** | **-1.5%** |
+
+The overcount increased from 0.5% (v1 of this pipeline) to 1.5% because additional ocean/sea queries (e.g., South China Sea, Greenland Sea, Japan Sea) now capture records that also match their parent country name (e.g., China, Greenland, Japan). These are genuine multi-token records — the same record appears with `country="South China Sea"` and also matches `country="China"` because "China" is a token in "South China Sea". Both rows count it.
 
 ### 10.3 Interpretation
 
@@ -370,7 +385,7 @@ A small set of ~190 records appear across many country pairs simultaneously (lik
 
 The small positive gap for `undated` (+1,952, 0.03%) is from tiny non-vocab values (< 50 records each) not included in the dataset. These are mostly obscure locality names and one-off formatting variants.
 
-**The -0.5% overcount for "all" is from genuine multi-country attribution, which is expected and acceptable.** The data is complete — all significant country-field values are represented.
+**The -1.5% overcount for "all" is from genuine multi-country attribution, which is expected and acceptable.** The data is complete — all significant country-field values are represented.
 
 ---
 
@@ -382,7 +397,7 @@ The small positive gap for `undated` (+1,952, 0.03%) is from tiny non-vocab valu
 |--------|------------|
 | `country` | The value of the ENA `country` field (or `(no country)` for unattributed) |
 | `pre_2018` | Records with `first_public < 2018-01-01` |
-| `2018`–`2025` | Records with `first_public` in that calendar year |
+| `2018`–`2026` | Records with `first_public` in that calendar year (2026 is partial: Jan–Oct) |
 | `undated` | Records with no `first_public` date |
 | `all` | All records (no date filter). Equals `pre_2018 + sum(years) + undated` |
 
@@ -400,7 +415,7 @@ Three columns: `country`, `period`, `count`. One row per country-period combinat
 
 2. **`country` records collection locality, not sovereign provider.** Overseas territories, Antarctica, and high-seas/ocean labels complicate attribution to a sovereign state. This is inherent to INSDC provenance and not fixable via query syntax.
 
-3. **~0.5% overcount from multi-country records.** Records with multiple country tokens in the `country` field (e.g., `USA: Canada`) are counted in both rows. This is genuine multi-country attribution and is expected.
+3. **~1.5% overcount from multi-country records.** Records with multiple country tokens in the `country` field (e.g., `USA: Canada`, `South China Sea`) are counted in both rows. This is genuine multi-country attribution and is expected.
 
 4. **~0.03% undercount from tiny non-vocab values.** A small number of one-off locality names and formatting variants (< 50 records each) are not included.
 
@@ -555,4 +570,4 @@ Name matching uses an explicit `INSDC_TO_UN` mapping dictionary to handle differ
 
 ### 15.6 Unmapped countries
 
-32 countries remain unmapped (no UN M.49 classification), totaling 52,727 records (0.17% of country total). These are mostly uninhabited territories (Paracel Islands, Spratly Islands, Johnston Atoll, etc.) and a few political entities with ambiguous status (Taiwan, West Bank, Kosovo). See `country_mapping_audit.csv` for the full mapping of all 362 raw values.
+32 countries remain unmapped (no UN M.49 classification), totaling 52,727 records (0.17% of country total). These are mostly uninhabited territories (Paracel Islands, Spratly Islands, Johnston Atoll, etc.) and a few political entities with ambiguous status (Taiwan, West Bank, Kosovo). See `country_mapping_audit.csv` for the full mapping of all 378 raw values.

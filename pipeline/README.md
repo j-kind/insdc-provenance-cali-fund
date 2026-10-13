@@ -28,7 +28,8 @@ pipeline/
 │   ├── agg_by_dev_status.csv       Aggregation by developed/developing
 │   ├── agg_by_income.csv           Aggregation by World Bank income group
 │   ├── agg_by_vulnerability.csv    Aggregation by LDC/SIDS/LLDC
-│   └── analysis_report.md          Step 3 output: disparity analysis report
+│   ├── analysis_report.md          Step 3 output: disparity analysis report
+│   └── pipeline_evaluation.md      Subagent evaluation of pipeline and analysis
 └── archive_v2/                 Archived v2 period-bucket pipeline (superseded)
     └── README.md                   (in archive_v1/ at repo root)
 ```
@@ -45,17 +46,17 @@ pipeline/
 cd pipeline/
 python3 query_annual_counts.py
 ```
-- Queries ENA `/count` endpoint for 296 INSDC vocab countries + 32 non-vocab values + 9 placeholders
-- 8 year columns (2018–2025) + pre_2018 + undated + all
-- 17 collision exclusions (9 cross-country + 8 sub-national)
-- ~3,278 queries, ~15 minutes
+- Queries ENA `/count` endpoint for 296 INSDC vocab countries + 82 non-vocab values
+- 9 year columns (2018–2026, last is partial) + pre_2018 + undated + all
+- 20 collision exclusions (9 cross-country + 8 sub-national + 3 non-vocab)
+- 4,560 queries, ~15 minutes
 - Output: `output/annual_counts.csv`, `output/annual_counts_long.csv`
 
 ### Step 2: Aggregate onto countries
 ```bash
 python3 aggregate_countries.py
 ```
-- Maps 362 raw country-field values to 270 canonical countries
+- Maps 378 raw country-field values to 267 canonical countries
 - Handles historical names, alternative names, locality names
 - Joins with UN M.49 and World Bank classifications
 - Output: `output/country_annual_counts.csv` + `output/agg_by_*.csv`
@@ -65,7 +66,7 @@ python3 aggregate_countries.py
 python3 analyze_disparities.py
 ```
 - Analyzes global disparities by dev status, income, vulnerability, region
-- Temporal trends 2018–2025 with growth rates
+- Temporal trends 2018–2026 with growth rates
 - Output: `output/analysis_report.md`
 
 ### Run all steps
@@ -77,19 +78,20 @@ python3 query_annual_counts.py && python3 aggregate_countries.py && python3 anal
 
 1. **Non-human filter:** `NOT tax_tree(9606) AND NOT host_tax_id=9606 AND NOT tax_tree(32630)` — excludes human organism, human microbiome, and synthetic constructs
 2. **Temporal anchor:** `first_public` (78.5% coverage; 21.5% undated, reported separately)
-3. **Country matching:** `country="X"` is an ANY-TOKEN match — 17 collision exclusions applied to prevent false matches
+3. **Country matching:** `country="X"` is an ANY-TOKEN match — 20 collision exclusions applied to prevent false matches
 4. **ENA is case-insensitive** — all case variants captured by single lowercase query
-5. **Non-vocab values included** — 32 alternative names, locality names, and placeholders added for completeness
-6. **Reconciliation:** -0.5% overcount (genuine multi-country records)
+5. **Non-vocab values included** — 82 alternative names, locality names, oceans/seas, and placeholders added for completeness
+6. **Reconciliation:** -1.5% overcount (genuine multi-country records, including ocean/country name overlaps)
 
 See `output/annual_counts_methodology.md` for the full methodology (15 sections, all caveats).
 
 ## Evaluation documents
 
-Two subagent evaluations informed this pipeline:
+Three subagent evaluations informed and validated this pipeline:
 
 - **`api_evaluation.md`** — Evaluated the ENA API approach for the v2 pipeline. Discovered the `/count` endpoint, the `[country]` field tag, the `host_tax_id` filter, and that ENA/NCBI are mirrors.
 - **`annual_evaluation.md`** — Evaluated switching to annual counts. Discovered the token-collision problem (9 cross-country + 8 sub-national pairs), the 21.5% undated gap, and the placeholder contamination (3.27M "missing" records).
+- **`output/pipeline_evaluation.md`** — Comprehensive evaluation of the full pipeline and analysis. Verified counts against live ENA API, checked arithmetic, identified and fixed: Georgia/South Georgia collision, 2026 temporal gap, stale hardcoded key findings, Congo duplicate, Line Islands mapping, and reproducibility gap.
 
 ## Archived work
 

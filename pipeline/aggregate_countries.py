@@ -28,7 +28,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 OUTPUT_DIR = os.path.join(BASE_DIR, "output")
 
-YEARS = ['pre_2018', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', 'undated', 'all']
+YEARS = ['pre_2018', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', 'undated', 'all']
 
 # ── Mapping: raw country-field value → canonical country ────────────
 # Keys are values from annual_counts.csv that need to be mapped to a
@@ -85,6 +85,10 @@ COUNTRY_MAPPING = {
     'Lao_People\'s_Democratic_Republic': 'Laos',
     'The Bahamas': 'Bahamas',
     'Columbia': 'Colombia',  # likely misspelling; may include some British Columbia records
+    'Congo': 'Republic of the Congo',  # bare "Congo" → RoC (DRC is separate vocab entry)
+
+    # ── Territory/island group → sovereign country ──
+    'Line Islands': 'Kiribati',  # integral part of Kiribati
 
     # ── Locality names → parent country ──
     # Japanese localities (country field has locality without "Japan")
@@ -251,6 +255,9 @@ def main():
 
     for row in raw_rows:
         raw_name = row['country']
+        # Skip metadata rows (reconciliation markers from query script)
+        if raw_name.startswith('__') and raw_name.endswith('__'):
+            continue
         counts = {y: int(row[y]) for y in YEARS}
 
         if raw_name in NON_COUNTRY:

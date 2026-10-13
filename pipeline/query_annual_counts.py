@@ -43,8 +43,8 @@ RUN_TIMESTAMP = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 # Non-human filter: exclude human organism, human microbiome, synthetic constructs
 NON_HUMAN_FILTER = 'NOT tax_tree(9606) AND NOT host_tax_id=9606 AND NOT tax_tree(32630)'
 
-# Years to query
-YEARS = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+# Years to query (2026 included because ENA has records dated Jan-Oct 2026)
+YEARS = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]
 
 # Date filters for each year
 def year_filter(year):
@@ -76,7 +76,7 @@ COLLISION_EXCLUSIONS = {
     'Samoa': ['American Samoa'],
     'Serbia': ['Serbia and Montenegro'],
     # Sub-national collisions (country name appears in another country's region)
-    'Georgia': ['USA'],           # US state of Georgia vs country of Georgia
+    'Georgia': ['USA', 'South Georgia and the South Sandwich Islands'],  # US state of Georgia + South Georgia
     'Mongolia': ['China'],        # Inner Mongolia (China) vs country of Mongolia
     'Mexico': ['USA'],            # New Mexico (US state) vs country of Mexico
     'Jersey': ['USA'],            # New Jersey (US state) vs Channel Island of Jersey
@@ -84,6 +84,10 @@ COLLISION_EXCLUSIONS = {
     'Jamaica': ['USA'],           # Jamaica, Queens (US) vs country of Jamaica
     'Lebanon': ['USA'],           # Lebanon, NH (US) vs country of Lebanon
     'Jordan': ['USA'],            # USA: Jordan vs country of Jordan
+    # Non-vocab collision exclusions
+    'Columbia': ['Canada'],       # British Columbia (Canada) vs Colombia misspelling
+    'Congo': ['Republic of the Congo', 'Democratic Republic of the Congo'],
+    'Antarctic': ['Antarctica'],  # Antarctic (non-vocab) vs Antarctica (vocab)
 }
 
 def build_country_clause(insdc_name):
@@ -93,6 +97,58 @@ def build_country_clause(insdc_name):
         for longer_name in COLLISION_EXCLUSIONS[insdc_name]:
             clause += f' AND NOT country="{longer_name}"'
     return clause
+
+
+# ── Non-vocab country-field values ──────────────────────────────────
+# These are values found in ENA's country field that are NOT in the
+# INSDC controlled vocabulary (insdc_countries_clean.txt) but appear
+# frequently enough to warrant dedicated queries. They include:
+#   - Alternative country names (UK, US, United States, etc.)
+#   - Locality names without country prefix (Japanese/Chinese sites)
+#   - Placeholders (missing, NULL, na, None, etc.)
+#   - Oceans and seas
+#   - Historical/alternative names (Columbia, Congo, etc.)
+#
+# Collision exclusions for non-vocab values are in COLLISION_EXCLUSIONS above.
+
+NON_VOCAB_COUNTRIES = [
+    # Alternative country names
+    'United States', 'United States of America', 'US', 'U.S.', 'United_States_of_America',
+    'UK', 'Britain', 'Great Britain', 'England', 'Scotland', 'Wales', 'Northern Ireland',
+    'Turkiye',
+    'Cote d\'Ivoire',
+    'Vietnam', 'Viet_Nam',
+    'Syrian Arab Republic',
+    'Cambodge',
+    'Sri_Lanka',
+    'Lao_People\'s_Democratic_Republic',
+    'The Bahamas',
+    'Columbia',
+    'Congo',
+    # Locality names → parent country (mapped in aggregate_countries.py)
+    'Sugadaira', 'Yakushima', 'Yakushidake', 'Iriomote', 'Teshio',
+    'Tomakomai', 'Sasayama', 'Yoshidayama', 'Yona', 'Nippon',
+    'Shenzhen', 'Xi\'an', 'Lijiang', 'Ailaoshan', 'Nabanhe',
+    'Valencia', 'Mississippi River', 'Atacama Desert',
+    'Helgoland', 'Barro Colorado Island',
+    # Placeholders
+    'missing', 'NULL', 'na', 'None', 'not applicable', 'not appicable',
+    'not collected', 'unknown', '(no country)',
+    # Gazetteer IDs
+    'GAZ',
+    # Oceans and seas (non-country values, NOT in INSDC vocab)
+    'Antarctic',
+    'Black Sea', 'Red Sea',
+    'Coral Sea', 'Caspian Sea', 'Barents Sea',
+    'Bering Sea', 'Caribbean Sea', 'Sargasso Sea', 'Norwegian Sea',
+    'Kara Sea', 'Laptev Sea', 'East Siberian Sea', 'Chukchi Sea',
+    'Beaufort Sea', 'Amundsen Sea', 'Weddell Sea',
+    'Labrador Sea', 'Greenland Sea', 'Celtic Sea',
+    'Japan Sea', 'Okhotsk Sea', 'Sea of Japan',
+    'North Atlantic Ocean', 'South Atlantic Ocean',
+    'North Pacific Ocean', 'South Pacific Ocean',
+    'South China Sea', 'East China Sea',
+]
 
 
 # ── ENA /count query ────────────────────────────────────────────────
@@ -159,10 +215,15 @@ def main():
     print(f"  Collision exclusions: {len(COLLISION_EXCLUSIONS)} short names")
 
     countries = load_insdc_countries()
-    print(f"  Countries: {len(countries)}")
+    non_vocab = NON_VOCAB_COUNTRIES
+    all_countries = countries + non_vocab
+    print(f"  Countries (vocab): {len(countries)}")
+    print(f"  Non-vocab values: {len(non_vocab)}")
+    print(f"  Total to query: {len(all_countries)}")
+    print(f"  Collision exclusions: {len(COLLISION_EXCLUSIONS)} entries")
 
     # Column order for output
-    columns = ['insdc_country', 'pre_2018'] + [str(y) for y in YEARS] + ['undated', 'all']
+    columns = ['country', 'pre_2018'] + [str(y) for y in YEARS] + ['undated', 'all']
 
     # All date slices (pre_2018, each year, undated) — "all" is computed
     date_slices = [('pre_2018', PRE_2018_FILTER)] + \
@@ -172,7 +233,7 @@ def main():
     results = {}  # {country_name: {col_name: count}}
     errors = 0
     query_count = 0
-    total_queries = len(countries) * len(date_slices) + len(date_slices) * 2  # +unattributed +attributed_total
+    total_queries = len(all_countries) * (len(date_slices) + 1) + len(date_slices) * 2  # +unattributed +attributed_total
 
     # ── Unattributed queries ────────────────────────────────────────
     print(f"\n  Querying unattributed (NOT country=\"*\")...")
@@ -216,9 +277,9 @@ def main():
     results['__ATTRIBUTED_TOTAL__'] = attributed
 
     # ── Per-country queries ─────────────────────────────────────────
-    print(f"\n  Querying {len(countries)} countries × {len(date_slices)+1} slices...")
+    print(f"\n  Querying {len(all_countries)} countries × {len(date_slices)+1} slices...")
 
-    for i, country_name in enumerate(countries):
+    for i, country_name in enumerate(all_countries):
         has_collision = country_name in COLLISION_EXCLUSIONS
         country_clause = build_country_clause(country_name)
         use_post = has_collision  # POST for long collision queries
@@ -244,7 +305,7 @@ def main():
         results[country_name] = country_results
 
         if (i + 1) % 50 == 0:
-            print(f"    {i+1}/{len(countries)} countries done ({query_count}/{total_queries} queries)")
+            print(f"    {i+1}/{len(all_countries)} countries done ({query_count}/{total_queries} queries)")
 
     print(f"\n  Queries complete: {query_count} total, {errors} errors")
 
@@ -255,18 +316,18 @@ def main():
         writer = csv.DictWriter(f, fieldnames=columns)
         writer.writeheader()
         # Unattributed row
-        row = {'insdc_country': '__UNATTRIBUTED__'}
-        row.update({col: unattributed.get(col, 0) for col in columns if col != 'insdc_country'})
+        row = {'country': '__UNATTRIBUTED__'}
+        row.update({col: unattributed.get(col, 0) for col in columns if col != 'country'})
         writer.writerow(row)
         # Attributed total row
-        row = {'insdc_country': '__ATTRIBUTED_TOTAL__'}
-        row.update({col: attributed.get(col, 0) for col in columns if col != 'insdc_country'})
+        row = {'country': '__ATTRIBUTED_TOTAL__'}
+        row.update({col: attributed.get(col, 0) for col in columns if col != 'country'})
         writer.writerow(row)
         # Country rows
-        for country_name in countries:
-            row = {'insdc_country': country_name}
+        for country_name in all_countries:
+            row = {'country': country_name}
             cr = results.get(country_name, {})
-            row.update({col: cr.get(col, 0) for col in columns if col != 'insdc_country'})
+            row.update({col: cr.get(col, 0) for col in columns if col != 'country'})
             writer.writerow(row)
 
     print(f"\n  Saved: {outfile}")
@@ -277,18 +338,18 @@ def main():
     print(f"  {'-'*52}")
     for col_name in ['pre_2018'] + [str(y) for y in YEARS] + ['undated']:
         country_sum = sum(results.get(c, {}).get(col_name, 0)
-                         for c in countries if results.get(c, {}).get(col_name, 0) > 0)
+                         for c in all_countries if results.get(c, {}).get(col_name, 0) > 0)
         attr_total = attributed.get(col_name, 0)
         diff = attr_total - country_sum
         print(f"  {col_name:<10} {country_sum:>15,} {attr_total:>15,} {diff:>10,}")
     # "all" reconciliation
     country_sum_all = sum(results.get(c, {}).get('all', 0)
-                         for c in countries if results.get(c, {}).get('all', 0) > 0)
+                         for c in all_countries if results.get(c, {}).get('all', 0) > 0)
     attr_all = attributed.get('all', 0)
     diff_all = attr_all - country_sum_all
     print(f"  {'all':<10} {country_sum_all:>15,} {attr_all:>15,} {diff_all:>10,}")
     if diff_all > 0:
-        print(f"  → Non-vocab orphans (attributed but not in 296-name vocab): {diff_all:,}")
+        print(f"  → Non-vocab orphans (attributed but not in {len(all_countries)}-name list): {diff_all:,}")
 
     # ── Grand totals ────────────────────────────────────────────────
     total_all = unattributed.get('all', 0) + attributed.get('all', 0)
@@ -296,7 +357,7 @@ def main():
     print(f"    Total non-human (excl. microbiome + synthetic):  {total_all:,}")
     print(f"    Attributed (with country):                       {attributed.get('all', 0):,}")
     print(f"    Unattributed (no country):                       {unattributed.get('all', 0):,}")
-    print(f"    Undated (no first_public, attributed):           ~{sum(results.get(c, {}).get('undated', 0) for c in countries if results.get(c, {}).get('undated', 0) > 0):,}")
+    print(f"    Undated (no first_public, attributed):           ~{sum(results.get(c, {}).get('undated', 0) for c in all_countries if results.get(c, {}).get('undated', 0) > 0):,}")
 
     print(f"\n{'='*70}")
     print(f"DONE — Output: {outfile}")

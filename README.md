@@ -37,22 +37,23 @@ See `pipeline/README.md` for full documentation.
 ## Key findings
 
 - **30.3 million** non-human DSI records (excl. microbiome + synthetic constructs) in ENA
-- **18.9 million** (62%) attributable to sovereign countries; 38% are oceans, placeholders, or undated
-- **Developed countries hold 70%** of country-attributed records; developing countries 30%
+- **19.0 million** (62.7%) attributable to sovereign countries; 37.3% are oceans, placeholders, unattributed, or historical
+- **Developed countries hold 70.4%** of country-attributed records; developing countries 29.6%
 - **LDCs account for 2.8%**, SIDS 1.2%, LLDCs 1.2% — 47 LDCs combined have fewer records than Canada alone
-- **The developed-country share declined from 74% (2018) to 54% (2025)**, driven by China and other upper-middle-income countries
-- **Europe dominates** with 41% of records, led by the UK (COVID-19 Genomics UK consortium)
-- **Africa has only 3.6%** despite having 59 classified countries
-- **36% of records cannot be attributed to any country**, limiting utility for allocation methodology
+- **The developed-country share declined from 74.2% (2018) to 50.9% (2026)**, driven by China and other upper-middle-income countries
+- **Europe dominates** with 40.9% of records, led by the UK (COVID-19 Genomics UK consortium)
+- **Africa has only 3.6%** despite having 58 classified countries
+- **38.3% of records cannot be attributed to any country**, limiting utility for allocation methodology
 
 ## Methodology highlights
 
 - **ENA `/count` endpoint** — exact counts without downloading records
 - **Non-human filter:** `NOT tax_tree(9606) AND NOT host_tax_id=9606 AND NOT tax_tree(32630)`
-- **17 collision exclusions** — prevent false country matches from token matching (e.g., "USA: New Mexico" not counted for Mexico)
-- **32 non-vocab values included** — alternative names, locality names, placeholders
+- **20 collision exclusions** — prevent false country matches from token matching (e.g., "USA: New Mexico" not counted for Mexico, "South Georgia" not counted for Georgia)
+- **82 non-vocab values included** — alternative names, locality names, oceans/seas, placeholders
+- **9 year columns (2018–2026)** — 2026 is partial (Jan–Oct); plus pre-2018, undated, and all-time
 - **21.5% of records undated** — reported separately, not silently dropped
-- **Reconciliation within -0.5%** of true total (genuine multi-country overcount)
+- **Reconciliation within -1.5%** of true total (genuine multi-country overcount, including ocean/country name overlaps)
 
 See `pipeline/output/annual_counts_methodology.md` for the complete methodology.
 

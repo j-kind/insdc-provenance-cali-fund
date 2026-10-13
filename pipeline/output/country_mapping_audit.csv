@@ -1,5 +1,4 @@
 raw_value,mapped_to,all_count
-(no country),(non-country),7695501
 United Kingdom,United Kingdom,4095348
 USA,USA,3964655
 China,China,3331881
@@ -49,8 +48,10 @@ Costa Rica,Costa Rica,41212
 Ethiopia,Ethiopia,40331
 Taiwan,Taiwan,39735
 Greece,Greece,39120
+GAZ,(non-country),36563
 Saudi Arabia,Saudi Arabia,35807
 Colombia,Colombia,35738
+Shenzhen,China,35541
 Indonesia,Indonesia,34424
 Czechia,Czechia,33285
 Nigeria,Nigeria,33186
@@ -66,9 +67,10 @@ Mediterranean Sea,(non-country),27450
 Indian Ocean,(non-country),27243
 Hungary,Hungary,26245
 North Sea,(non-country),26216
+United States,USA,25590
 Viet Nam,Viet Nam,23776
 not applicable,(non-country),22660
-GAZ,(non-country),21319
+United States of America,USA,22487
 Ghana,Ghana,21276
 Iran,Iran,20817
 Papua New Guinea,Papua New Guinea,20627
@@ -77,12 +79,11 @@ Puerto Rico,Puerto Rico,19982
 Korea,__HISTORICAL__,18625
 Croatia,Croatia,18544
 Cameroon,Cameroon,17984
+South China Sea,(non-country),17870
 Senegal,Senegal,17767
 Nepal,Nepal,17628
-United States of America,USA,17508
 Greenland,Greenland,16910
 French Polynesia,French Polynesia,16376
-Georgia,Georgia,15926
 Democratic Republic of the Congo,Democratic Republic of the Congo,15831
 Mali,Mali,15806
 Latvia,Latvia,15642
@@ -91,13 +92,17 @@ Cambodia,Cambodia,14661
 Mongolia,Mongolia,14642
 Columbia,Colombia,14602
 Svalbard,Svalbard,14506
+Georgia,Georgia,14271
 Cyprus,Cyprus,14029
 Pakistan,Pakistan,13634
 Bulgaria,Bulgaria,13525
 Romania,Romania,13393
+Wales,United Kingdom,12538
 Slovenia,Slovenia,11829
+Scotland,United Kingdom,11814
 Slovakia,Slovakia,11713
 French Guiana,French Guiana,11532
+England,United Kingdom,11356
 Iceland,Iceland,11282
 Southern Ocean,(non-country),10810
 Gambia,Gambia,10381
@@ -105,9 +110,9 @@ Kazakhstan,Kazakhstan,10158
 Morocco,Morocco,10132
 Cote d'Ivoire,Cote d'Ivoire,9728
 Luxembourg,Luxembourg,9481
-Wales,United Kingdom,8594
 Haiti,Haiti,8544
 Venezuela,Venezuela,8417
+Red Sea,(non-country),8261
 Fiji,Fiji,8100
 Ukraine,Ukraine,8066
 Mozambique,Mozambique,7971
@@ -117,22 +122,28 @@ Belize,Belize,7662
 Uruguay,Uruguay,7361
 United Arab Emirates,United Arab Emirates,7349
 Reunion,Reunion,7266
+Sugadaira,Japan,7226
 Zambia,Zambia,7157
 Bolivia,Bolivia,6815
+Xi'an,China,6600
 New Caledonia,New Caledonia,6576
 Namibia,Namibia,6477
 Tunisia,Tunisia,6303
+East China Sea,(non-country),6257
 Lithuania,Lithuania,6251
 Rwanda,Rwanda,6069
 Egypt,Egypt,5861
 Curacao,Curacao,5802
 Seychelles,Seychelles,5574
 Central African Republic,Central African Republic,5471
+Northern Ireland,United Kingdom,5436
 Myanmar,Myanmar,5429
+Valencia,Spain,5307
 Zimbabwe,Zimbabwe,5221
 Afghanistan,Afghanistan,4979
 Serbia,Serbia,4569
 Gabon,Gabon,4544
+UK,United Kingdom,4504
 Guyana,Guyana,4219
 Oman,Oman,4173
 Algeria,Algeria,4090
@@ -144,18 +155,22 @@ not collected,(non-country),3392
 Sri Lanka,Sri Lanka,3364
 Cuba,Cuba,3283
 Bermuda,Bermuda,3227
+Lijiang,China,3166
 Nicaragua,Nicaragua,3164
-UK,United Kingdom,3099
 Trinidad and Tobago,Trinidad and Tobago,3072
+Coral Sea,(non-country),3045
 Lebanon,Lebanon,3011
 Guinea,Guinea,2996
 Sudan,Sudan,2877
 na,(non-country),2782
 Cape Verde,Cape Verde,2733
+US,USA,2724
+Yakushima,Japan,2696
 Bahamas,Bahamas,2695
 Vanuatu,Vanuatu,2645
+Turkiye,Turkey,2608
+Mississippi River,USA,2583
 Dominican Republic,Dominican Republic,2579
-United States,USA,2573
 Benin,Benin,2519
 Montenegro,Montenegro,2513
 Borneo,(non-country),2491
@@ -169,13 +184,17 @@ Antarctic,(non-country),2218
 Mauritius,Mauritius,2179
 Mayotte,Mayotte,2117
 Botswana,Botswana,2105
+Ailaoshan,China,2081
 Palau,Palau,2056
 Iraq,Iraq,2035
 Cayman Islands,Cayman Islands,2019
+Nabanhe,China,2013
+Barents Sea,(non-country),1936
+Black Sea,(non-country),1929
 El Salvador,El Salvador,1895
-US,USA,1871
-Coral Sea,(non-country),1759
+Helgoland,Germany,1853
 Faroe Islands,Faroe Islands,1734
+Atacama Desert,Chile,1713
 South Georgia and the South Sandwich Islands,South Georgia and the South Sandwich Islands,1655
 Kyrgyzstan,Kyrgyzstan,1624
 NULL,(non-country),1621
@@ -183,26 +202,34 @@ Jersey,Jersey,1602
 Kuwait,Kuwait,1597
 Republic of the Congo,Republic of the Congo,1596
 Uzbekistan,Uzbekistan,1563
+Teshio,Japan,1556
+Britain,United Kingdom,1537
 Paracel Islands,Paracel Islands,1470
 Suriname,Suriname,1462
 Macau,Macau,1435
 Paraguay,Paraguay,1416
+Great Britain,United Kingdom,1395
 Azerbaijan,Azerbaijan,1391
 Togo,Togo,1390
+North Pacific Ocean,(non-country),1358
 Solomon Islands,Solomon Islands,1339
 Sint Maarten,Sint Maarten,1314
 Armenia,Armenia,1299
 Liberia,Liberia,1297
 Tasman Sea,(non-country),1295
 Coral Sea Islands,(non-country),1286
-Helgoland,Germany,1217
+Caspian Sea,(non-country),1265
+Norwegian Sea,(non-country),1263
+Barro Colorado Island,Panama,1247
+Iriomote,Japan,1221
+North Atlantic Ocean,(non-country),1213
 American Samoa,American Samoa,1177
 Sierra Leone,Sierra Leone,1165
 Tajikistan,Tajikistan,1139
-Scotland,United Kingdom,1138
 Bosnia and Herzegovina,Bosnia and Herzegovina,1128
 Macedonia,North Macedonia,1127
-England,United Kingdom,1120
+South Atlantic Ocean,(non-country),1116
+Bering Sea,(non-country),1092
 Bhutan,Bhutan,1091
 Ross Sea,(non-country),1075
 Palmyra Atoll,Palmyra Atoll,1002
@@ -219,51 +246,47 @@ Angola,Angola,823
 Beaufort Sea,(non-country),818
 Niger,Niger,817
 Northern Mariana Islands,Northern Mariana Islands,806
+Yoshidayama,Japan,796
 "Micronesia, Federated States of","Micronesia, Federated States of",793
 Chad,Chad,791
 West Bank,West Bank,780
 Spratly Islands,Spratly Islands,771
 Jamaica,Jamaica,746
 Yakushidake,Japan,737
-Yoshidayama,Japan,724
-Yakushima,Japan,718
+Tomakomai,Japan,727
 Turkmenistan,Turkmenistan,716
 Maldives,Maldives,710
 Moldova,Moldova,707
-Iriomote,Japan,704
-Sugadaira,Japan,697
-Teshio,Japan,693
-Yona,Japan,671
+Yona,Japan,702
 unknown,(non-country),660
 North Korea,North Korea,625
-Tomakomai,Japan,606
 Libya,Libya,602
 Wallis and Futuna,Wallis and Futuna,600
+South Pacific Ocean,(non-country),591
+Sea of Japan,(non-country),578
 Yugoslavia,__HISTORICAL__,568
 Brunei,Brunei,557
 Eritrea,Eritrea,557
+Caribbean Sea,(non-country),555
 Syrian Arab Republic,Syria,548
 Burundi,Burundi,546
-Norwegian Sea,(non-country),526
+Vietnam,Viet Nam,540
+Sasayama,Japan,536
 Kerguelen Archipelago,Kerguelen Archipelago,508
-Lijiang,China,507
 Comoros,Comoros,502
-Sasayama,Japan,491
 Kara Sea,(non-country),485
 Netherlands Antilles,__HISTORICAL__,483
 Cook Islands,Cook Islands,470
 Micronesia,Micronesia,464
-Northern Ireland,United Kingdom,463
+U.S.,USA,448
 Samoa,Samoa,447
 Barbados,Barbados,445
 North Macedonia,North Macedonia,444
 None,(non-country),438
 Labrador Sea,(non-country),427
 Mauritania,Mauritania,421
-Ailaoshan,China,419
 Eswatini,Eswatini,419
-Nabanhe,China,419
-Vietnam,Viet Nam,397
+Japan Sea,(non-country),371
 Dominica,Dominica,364
 Saint Kitts and Nevis,Saint Kitts and Nevis,335
 USSR,__HISTORICAL__,330
@@ -276,19 +299,17 @@ Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,283
 Saint Barthelemy,Saint Barthelemy,281
 Djibouti,Djibouti,273
 Christmas Island,Christmas Island,271
-Amundsen Sea,(non-country),265
 Turks and Caicos Islands,Turks and Caicos Islands,265
+Amundsen Sea,(non-country),265
 East Siberian Sea,(non-country),245
 Falkland Islands (Islas Malvinas),Falkland Islands (Islas Malvinas),242
 Bahrain,Bahrain,240
 Somalia,Somalia,240
 Laptev Sea,(non-country),237
-Shenzhen,China,235
 Monaco,Monaco,233
 Equatorial Guinea,Equatorial Guinea,214
 Saint Lucia,Saint Lucia,205
-Valencia,Spain,191
-Line Islands,Line Islands,186
+Line Islands,Kiribati,186
 Cocos Islands,Cocos Islands,179
 Weddell Sea,(non-country),176
 The Bahamas,Bahamas,172
@@ -297,25 +318,21 @@ Juan de Nova Island,Juan de Nova Island,168
 Andorra,Andorra,153
 Saint Helena,Saint Helena,145
 Europa Island,Europa Island,143
-Atacama Desert,Chile,142
 British Virgin Islands,British Virgin Islands,132
 Norfolk Island,Norfolk Island,132
 Lesotho,Lesotho,129
 Lao_People's_Democratic_Republic,Laos,127
 Czechoslovakia,__HISTORICAL__,126
+Nippon,Japan,122
 State of Palestine,State of Palestine,120
-Barro Colorado Island,Panama,117
+Greenland Sea,(non-country),116
 not appicable,(non-country),112
 Celtic Sea,(non-country),109
 Guernsey,Guernsey,106
 Antigua and Barbuda,Antigua and Barbuda,105
 Saint Martin,Saint Martin,100
-Xi'an,China,99
-Cambodge,Cambodia,97
 Timor-Leste,Timor-Leste,97
-Britain,United Kingdom,90
-U.S.,USA,79
-Mississippi River,USA,76
+Cambodge,Cambodia,97
 Isle of Man,Isle of Man,62
 Aruba,Aruba,57
 Viet_Nam,Viet Nam,56
@@ -326,8 +343,8 @@ United_States_of_America,USA,50
 Johnston Atoll,Johnston Atoll,48
 Gibraltar,Gibraltar,45
 Glorioso Islands,Glorioso Islands,42
-East Timor,Timor-Leste,41
 Liechtenstein,Liechtenstein,41
+East Timor,Timor-Leste,41
 Tokelau,Tokelau,39
 Western Sahara,Western Sahara,34
 Bouvet Island,Bouvet Island,25
@@ -341,16 +358,14 @@ Navassa Island,Navassa Island,14
 San Marino,San Marino,14
 The former Yugoslav Republic of Macedonia,North Macedonia,14
 Clipperton Island,Clipperton Island,13
-Burma,Myanmar,12
 Tuvalu,Tuvalu,12
-Congo,Congo,11
+Burma,Myanmar,12
 Serbia and Montenegro,__HISTORICAL__,11
-Great Britain,United Kingdom,9
+Congo,Republic of the Congo,11
 Bassas da India,Bassas da India,7
 Tromelin Island,Tromelin Island,6
 British Guiana,Guyana,5
 Nauru,Nauru,4
-Nippon,Japan,4
 Niue,Niue,4
 Pitcairn Islands,Pitcairn Islands,4
 Howland Island,Howland Island,2
@@ -358,6 +373,7 @@ Wake Island,Wake Island,2
 Baker Island,Baker Island,1
 Saint Pierre and Miquelon,Saint Pierre and Miquelon,1
 Ashmore and Cartier Islands,Ashmore and Cartier Islands,0
-Belgian Congo,Democratic Republic of the Congo,0
 Gaza Strip,Gaza Strip,0
 Jarvis Island,Jarvis Island,0
+Belgian Congo,Democratic Republic of the Congo,0
+(no country),(non-country),0
