@@ -1,14 +1,14 @@
 raw_value,mapped_to,all_count
 United Kingdom,United Kingdom,4095348
 USA,USA,3964655
-China,China,3331881
+China,China,3307756
 missing,(non-country),3274371
 Canada,Canada,530725
 Germany,Germany,508636
 Australia,Australia,424457
 Denmark,Denmark,403788
 France,France,388062
-Japan,Japan,364715
+Japan,Japan,363775
 Spain,Spain,326441
 Finland,Finland,237737
 Italy,Italy,216400
@@ -82,7 +82,7 @@ Cameroon,Cameroon,17984
 South China Sea,(non-country),17870
 Senegal,Senegal,17767
 Nepal,Nepal,17628
-Greenland,Greenland,16910
+Greenland,Greenland,16794
 French Polynesia,French Polynesia,16376
 Democratic Republic of the Congo,Democratic Republic of the Congo,15831
 Mali,Mali,15806

@@ -12,40 +12,40 @@
 | Metric | Count | % of grand total |
 |--------|-------|------------------|
 | Total non-human records | 30,313,212 | 100% |
-| Attributed to sovereign countries | 19,012,367 | 62.7% |
+| Attributed to sovereign countries | 18,987,186 | 62.6% |
 | Historical (multi-successor) | 20,143 | 0.1% |
 | Non-country (oceans, placeholders, GAZ) | 3,920,292 | 12.9% |
 | Unattributed (no country field) | 7,695,501 | 25.4% |
-| Multi-country overcount | 335,091 | 1.1% |
+| Multi-country overcount | 309,910 | 1.0% |
 
 ## 2. Developed vs Developing Countries
 
 | Status | Countries | All records | % share |
 |--------|-----------|-------------|---------|
-| Developed | 63 | 13,376,554 | 70.4% |
-| Developing | 175 | 5,623,291 | 29.6% |
+| Developed | 63 | 13,375,498 | 70.4% |
+| Developing | 175 | 5,599,166 | 29.5% |
 | Unknown | 29 | 12,522 | 0.1% |
 
 ### Annual record counts by development status
 
 | Year | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
 |------|------|------|------|------|------|------|------|------|------|
-| Developed | 384,501 | 574,529 | 774,199 | 2,272,506 | 1,899,890 | 1,783,462 | 999,266 | 1,037,199 | 561,714 |
-| Developing | 134,017 | 223,870 | 332,539 | 456,628 | 567,411 | 651,197 | 731,416 | 870,440 | 541,849 |
+| Developed | 384,484 | 574,492 | 774,188 | 2,272,486 | 1,899,839 | 1,783,313 | 998,971 | 1,036,890 | 561,709 |
+| Developing | 133,652 | 223,179 | 331,632 | 454,492 | 565,962 | 649,674 | 723,822 | 863,901 | 540,012 |
 
 ### Share of annual records (%)
 
 | Year | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
 |------|------|------|------|------|------|------|------|------|------|
-| Developed | 74.2% | 72.0% | 70.0% | 83.3% | 77.0% | 73.3% | 57.7% | 54.4% | 50.9% |
-| Developing | 25.8% | 28.0% | 30.0% | 16.7% | 23.0% | 26.7% | 42.3% | 45.6% | 49.1% |
+| Developed | 74.2% | 72.0% | 70.0% | 83.3% | 77.0% | 73.3% | 58.0% | 54.6% | 51.0% |
+| Developing | 25.8% | 28.0% | 30.0% | 16.7% | 23.0% | 26.7% | 42.0% | 45.4% | 49.0% |
 
 ### Year-over-year growth
 
 | Group | 2018→2019 | 2019→2020 | 2020→2021 | 2021→2022 | 2022→2023 | 2023→2024 | 2024→2025 | 2025→2026 |
 |-------|------|------|------|------|------|------|------|------|
 | Developed | +49% | +35% | +194% | -16% | -6% | -44% | +4% | -46% |
-| Developing | +67% | +49% | +37% | +24% | +15% | +12% | +19% | -38% |
+| Developing | +67% | +49% | +37% | +25% | +15% | +11% | +19% | -37% |
 
 Key finding: Developed countries dominate with 70.4% of country-attributed records. The gap widened sharply in 2021-2023 (COVID-19 sequencing surge in developed countries), but developing countries' share is growing in 2024-2026 as developed-country output declines.
 
@@ -53,8 +53,8 @@ Key finding: Developed countries dominate with 70.4% of country-attributed recor
 
 | Income group | Countries | All records | % share |
 |--------------|-----------|-------------|---------|
-| High income | 82 | 13,807,742 | 72.6% |
-| Upper middle income | 54 | 4,188,082 | 22.0% |
+| High income | 82 | 13,806,686 | 72.7% |
+| Upper middle income | 54 | 4,163,957 | 21.9% |
 | Lower middle income | 52 | 684,992 | 3.6% |
 | Low income | 26 | 261,334 | 1.4% |
 | Unknown | 53 | 70,217 | 0.4% |
@@ -63,8 +63,8 @@ Key finding: Developed countries dominate with 70.4% of country-attributed recor
 
 | Year | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
 |------|------|------|------|------|------|------|------|------|------|
-| High income | 394,339 | 591,482 | 799,711 | 2,305,926 | 1,934,082 | 1,844,987 | 1,055,504 | 1,094,227 | 598,754 |
-| Upper middle income | 100,570 | 178,098 | 265,686 | 347,144 | 387,621 | 518,133 | 603,483 | 731,269 | 460,068 |
+| High income | 394,322 | 591,445 | 799,700 | 2,305,906 | 1,934,031 | 1,844,838 | 1,055,209 | 1,093,918 | 598,749 |
+| Upper middle income | 100,205 | 177,407 | 264,779 | 345,008 | 386,172 | 516,610 | 595,889 | 724,730 | 458,231 |
 | Lower middle income | 16,628 | 19,116 | 28,535 | 56,503 | 124,231 | 43,034 | 49,808 | 60,612 | 31,012 |
 | Low income | 5,590 | 6,420 | 7,576 | 15,734 | 16,464 | 22,308 | 14,483 | 14,434 | 10,078 |
 
@@ -72,8 +72,8 @@ Key finding: Developed countries dominate with 70.4% of country-attributed recor
 
 | Year | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
 |------|------|------|------|------|------|------|------|------|------|
-| High income | 76.3% | 74.4% | 72.6% | 84.6% | 78.5% | 76.0% | 61.2% | 57.6% | 54.4% |
-| Upper middle income | 19.4% | 22.4% | 24.1% | 12.7% | 15.7% | 21.3% | 35.0% | 38.5% | 41.8% |
+| High income | 76.3% | 74.5% | 72.7% | 84.7% | 78.6% | 76.0% | 61.5% | 57.8% | 54.5% |
+| Upper middle income | 19.4% | 22.3% | 24.1% | 12.7% | 15.7% | 21.3% | 34.7% | 38.3% | 41.7% |
 | Lower middle income | 3.2% | 2.4% | 2.6% | 2.1% | 5.0% | 1.8% | 2.9% | 3.2% | 2.8% |
 | Low income | 1.1% | 0.8% | 0.7% | 0.6% | 0.7% | 0.9% | 0.8% | 0.8% | 0.9% |
 
@@ -116,8 +116,8 @@ Key finding: LDCs, SIDS, and LLDCs together account for only ~4% of country-attr
 | Region | Countries | All records | % share |
 |--------|-----------|-------------|---------|
 | Europe | 49 | 7,768,889 | 40.9% |
-| Americas | 53 | 5,217,739 | 27.4% |
-| Asia | 50 | 4,679,099 | 24.6% |
+| Americas | 53 | 5,217,623 | 27.5% |
+| Asia | 50 | 4,654,034 | 24.5% |
 | Africa | 58 | 688,721 | 3.6% |
 | Oceania | 26 | 605,378 | 3.2% |
 
@@ -126,8 +126,8 @@ Key finding: LDCs, SIDS, and LLDCs together account for only ~4% of country-attr
 | Year | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
 |------|------|------|------|------|------|------|------|------|------|
 | Europe | 110,850 | 192,899 | 339,308 | 1,850,506 | 1,381,675 | 1,043,186 | 348,435 | 321,207 | 164,595 |
-| Americas | 255,484 | 366,049 | 413,361 | 409,967 | 483,166 | 627,917 | 596,385 | 666,020 | 367,399 |
-| Asia | 115,974 | 189,834 | 283,512 | 357,799 | 431,635 | 588,570 | 674,515 | 806,035 | 504,819 |
+| Americas | 255,484 | 366,049 | 413,361 | 409,967 | 483,166 | 627,909 | 596,322 | 665,978 | 367,399 |
+| Asia | 115,592 | 189,106 | 282,594 | 355,643 | 430,135 | 586,906 | 666,689 | 799,229 | 502,977 |
 | Africa | 12,030 | 20,215 | 26,332 | 64,525 | 124,179 | 54,388 | 38,587 | 40,519 | 26,740 |
 | Oceania | 22,464 | 27,995 | 41,826 | 43,553 | 42,721 | 114,733 | 67,625 | 66,591 | 36,170 |
 
@@ -135,9 +135,9 @@ Key finding: LDCs, SIDS, and LLDCs together account for only ~4% of country-attr
 
 | Year | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
 |------|------|------|------|------|------|------|------|------|------|
-| Europe | 21.4% | 24.2% | 30.7% | 67.9% | 56.1% | 43.0% | 20.2% | 16.9% | 15.0% |
-| Americas | 49.4% | 45.9% | 37.4% | 15.0% | 19.6% | 25.9% | 34.6% | 35.0% | 33.4% |
-| Asia | 22.4% | 23.8% | 25.7% | 13.1% | 17.5% | 24.2% | 39.1% | 42.4% | 45.9% |
+| Europe | 21.5% | 24.2% | 30.8% | 67.9% | 56.1% | 43.0% | 20.3% | 17.0% | 15.0% |
+| Americas | 49.5% | 46.0% | 37.5% | 15.0% | 19.6% | 25.9% | 34.7% | 35.2% | 33.5% |
+| Asia | 22.4% | 23.7% | 25.6% | 13.1% | 17.5% | 24.2% | 38.8% | 42.2% | 45.8% |
 | Africa | 2.3% | 2.5% | 2.4% | 2.4% | 5.0% | 2.2% | 2.2% | 2.1% | 2.4% |
 | Oceania | 4.3% | 3.5% | 3.8% | 1.6% | 1.7% | 4.7% | 3.9% | 3.5% | 3.3% |
 
@@ -145,9 +145,9 @@ Key finding: LDCs, SIDS, and LLDCs together account for only ~4% of country-attr
 
 | Sub-region | Countries | All records | % share |
 |------------|-----------|-------------|---------|
-| Northern Europe | 15 | 5,275,262 | 27.7% |
-| Northern America | 5 | 4,569,400 | 24.0% |
-| Eastern Asia | 7 | 3,954,181 | 20.8% |
+| Northern Europe | 15 | 5,275,262 | 27.8% |
+| Northern America | 5 | 4,569,284 | 24.1% |
+| Eastern Asia | 7 | 3,929,116 | 20.7% |
 | Western Europe | 9 | 1,497,022 | 7.9% |
 | Southern Europe | 15 | 685,668 | 3.6% |
 | Sub-Saharan Africa | 51 | 658,822 | 3.5% |
@@ -168,8 +168,8 @@ Key finding: LDCs, SIDS, and LLDCs together account for only ~4% of country-attr
 | Year | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
 |------|------|------|------|------|------|------|------|------|------|
 | Northern Europe | 44,455 | 88,448 | 215,399 | 1,651,232 | 1,166,371 | 753,987 | 151,579 | 113,022 | 57,067 |
-| Northern America | 232,845 | 332,113 | 364,028 | 355,259 | 433,359 | 558,835 | 520,285 | 575,633 | 325,587 |
-| Eastern Asia | 94,565 | 166,364 | 238,516 | 315,299 | 372,991 | 514,671 | 597,088 | 719,366 | 454,453 |
+| Northern America | 232,845 | 332,113 | 364,028 | 355,259 | 433,359 | 558,827 | 520,222 | 575,591 | 325,587 |
+| Eastern Asia | 94,183 | 165,636 | 237,598 | 313,143 | 371,491 | 513,007 | 589,262 | 712,560 | 452,611 |
 | Western Europe | 41,215 | 62,377 | 74,532 | 119,062 | 121,397 | 172,966 | 115,607 | 117,471 | 57,930 |
 | Southern Europe | 17,712 | 30,088 | 33,931 | 56,381 | 64,302 | 83,589 | 48,048 | 62,987 | 33,716 |
 | Sub-Saharan Africa | 11,264 | 18,610 | 25,136 | 62,405 | 122,026 | 51,480 | 33,380 | 37,512 | 24,508 |
@@ -190,14 +190,14 @@ Key finding: LDCs, SIDS, and LLDCs together account for only ~4% of country-attr
 | # | Country | ISO3 | Status | Income | All | 2025 | 2026 | % share |
 |---|---------|------|--------|--------|-----|------|------|---------|
 | 1 | United Kingdom | GBR | Developed | High income | 4,143,928 | 55,275 | 24,914 | 21.8% |
-| 2 | USA | USA | Developed | High income | 4,018,537 | 500,180 | 285,032 | 21.1% |
-| 3 | China | CHN | Developing | Upper middle income | 3,381,282 | 622,871 | 407,199 | 17.8% |
+| 2 | USA | USA | Developed | High income | 4,018,537 | 500,180 | 285,032 | 21.2% |
+| 3 | China | CHN | Developing | Upper middle income | 3,357,157 | 616,332 | 405,362 | 17.7% |
 | 4 | Canada | CAN | Developed | High income | 530,725 | 73,478 | 39,494 | 2.8% |
 | 5 | Germany | DEU | Developed | High income | 510,489 | 42,797 | 17,036 | 2.7% |
 | 6 | Australia | AUS | Developed | High income | 424,457 | 42,478 | 24,205 | 2.2% |
 | 7 | Denmark | DNK | Developed | High income | 403,788 | 16,249 | 7,855 | 2.1% |
 | 8 | France | FRA | Developed | High income | 388,062 | 31,978 | 11,589 | 2.0% |
-| 9 | Japan | JPN | Developed | High income | 381,034 | 63,924 | 33,127 | 2.0% |
+| 9 | Japan | JPN | Developed | High income | 380,094 | 63,657 | 33,122 | 2.0% |
 | 10 | Spain | ESP | Developed | High income | 331,748 | 30,559 | 11,925 | 1.7% |
 | 11 | Finland | FIN | Developed | High income | 237,737 | 6,862 | 3,879 | 1.3% |
 | 12 | Italy | ITA | Developed | High income | 216,400 | 21,172 | 15,107 | 1.1% |
@@ -226,31 +226,31 @@ Key finding: LDCs, SIDS, and LLDCs together account for only ~4% of country-attr
 
 | Year | Total | Developed | Developing | Developed % |
 |------|-------|-----------|------------|-------------|
-| 2018 | 518,643 | 384,501 | 134,017 | 74.1% |
-| 2019 | 799,036 | 574,529 | 223,870 | 71.9% |
-| 2020 | 1,107,800 | 774,199 | 332,539 | 69.9% |
-| 2021 | 2,730,945 | 2,272,506 | 456,628 | 83.2% |
-| 2022 | 2,468,704 | 1,899,890 | 567,411 | 77.0% |
-| 2023 | 2,436,055 | 1,783,462 | 651,197 | 73.2% |
-| 2024 | 1,731,645 | 999,266 | 731,416 | 57.7% |
-| 2025 | 1,908,896 | 1,037,199 | 870,440 | 54.3% |
-| 2026 | 1,104,386 | 561,714 | 541,849 | 50.9% |
+| 2018 | 518,261 | 384,484 | 133,652 | 74.2% |
+| 2019 | 798,308 | 574,492 | 223,179 | 72.0% |
+| 2020 | 1,106,882 | 774,188 | 331,632 | 69.9% |
+| 2021 | 2,728,789 | 2,272,486 | 454,492 | 83.3% |
+| 2022 | 2,467,204 | 1,899,839 | 565,962 | 77.0% |
+| 2023 | 2,434,383 | 1,783,313 | 649,674 | 73.3% |
+| 2024 | 1,723,756 | 998,971 | 723,822 | 58.0% |
+| 2025 | 1,902,048 | 1,036,890 | 863,901 | 54.5% |
+| 2026 | 1,102,544 | 561,709 | 540,012 | 50.9% |
 
 *Note: 2026 covers January–October only (partial year).*
 ### Three-year period comparison
 
 | Period | Developed | Developing | LDC | SIDS | LLDC |
 |--------|-----------|------------|-----|------|------|
-| 2018-2020 | 1,733,229 | 690,426 | 32,388 | 28,853 | 21,876 |
-| 2021-2023 | 5,955,858 | 1,675,236 | 173,451 | 74,376 | 59,290 |
-| 2024-2026 | 2,598,179 | 2,143,705 | 66,029 | 61,225 | 42,265 |
+| 2018-2020 | 1,733,164 | 688,463 | 32,388 | 28,853 | 21,876 |
+| 2021-2023 | 5,955,638 | 1,670,128 | 173,451 | 74,376 | 59,290 |
+| 2024-2026 | 2,597,570 | 2,127,735 | 66,029 | 61,225 | 42,265 |
 
 ### Annualized growth rates between periods
 
 | Group | 2018-2020/yr | 2021-2023/yr | Growth | 2024-2026/yr | Growth |
 |-------|-------------|-------------|--------|-------------|--------|
-| Developed | 577,743 | 1,985,286 | +244% | 866,059 | -56% |
-| Developing | 230,142 | 558,412 | +143% | 714,568 | +28% |
+| Developed | 577,721 | 1,985,212 | +244% | 865,856 | -56% |
+| Developing | 229,487 | 556,709 | +143% | 709,245 | +27% |
 | LDC | 10,796 | 57,817 | +436% | 22,009 | -62% |
 | SIDS | 9,617 | 24,792 | +158% | 20,408 | -18% |
 | LLDC | 7,292 | 19,763 | +171% | 14,088 | -29% |
@@ -259,7 +259,7 @@ Key finding: LDCs, SIDS, and LLDCs together account for only ~4% of country-attr
 
 1. **Developed countries hold 70.4% of all country-attributed DSI records** despite containing only 63 of 238 classified countries.
 
-2. **The developed-country share declined from 74.2% in 2018 to 54.4% in 2025**, driven by rapid growth in China, India, Brazil, and other developing countries. However, the gap remains enormous in absolute terms.
+2. **The developed-country share declined from 74.2% in 2018 to 54.6% in 2025**, driven by rapid growth in China, India, Brazil, and other developing countries. However, the gap remains enormous in absolute terms.
 
 3. **LDCs account for only 2.8% of country-attributed records** — the 47 least developed countries combined have fewer records than Canada alone (527,519 vs 530,725).
 

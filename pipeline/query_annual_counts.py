@@ -88,6 +88,10 @@ COLLISION_EXCLUSIONS = {
     'Columbia': ['Canada'],       # British Columbia (Canada) vs Colombia misspelling
     'Congo': ['Republic of the Congo', 'Democratic Republic of the Congo'],
     'Antarctic': ['Antarctica'],  # Antarctic (non-vocab) vs Antarctica (vocab)
+    # Ocean/sea name overlaps (ocean name contains country name as token)
+    'China': ['South China Sea', 'East China Sea'],
+    'Japan': ['Japan Sea', 'Sea of Japan'],
+    'Greenland': ['Greenland Sea'],
 }
 
 def build_country_clause(insdc_name):
